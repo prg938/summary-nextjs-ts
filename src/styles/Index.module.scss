@@ -1,0 +1,63 @@
+$max-width: 700px;
+.main {
+  >div {
+    margin: 50px 0;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  .photoMeGroup {
+    background-color: black;
+    color: #bfbfbf;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .skillset {
+    min-width: 155px;
+  }
+
+  .skillsetWorkExperienceGroup,
+  .photoMeGroup {
+    display: flex;
+    gap: 50px;
+    @media screen and (max-width: $max-width) {
+      flex-direction: column;
+    }
+  }
+
+  .photoMeGroup {
+    align-items: center;
+  }
+
+  .workExperience {
+    >ul>li:not(:first-child) {
+      margin-top: 25px;
+    }
+  }
+
+  .contacts {
+    margin-top: 15px;
+    @media screen and (max-width: $max-width) {
+      margin-top: 50px;
+    }
+    a {
+      text-decoration: none;
+    }
+    b {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+}

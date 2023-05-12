@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "preview": "https://user-images.githubusercontent.com/7237762/229301735-0ba10058-6239-4417-b8c0-8aa001aa7388.gif",
+    "repoName": "chrome-weather",
+    "repoLink": "https://github.com/prg938/chrome-weather",
+    "desc": "<b>Weather extension for Chrome</b>. Written on TypeScript and React. <br/><b>Features</b>: Languages support: Ru/En, Animated chart, Geolocation, 50 hours of detailed weather information: [temperature, humidity, precipitation, wind]"
+  },
+  {
+    "id": 0,
+    "preview": "https://user-images.githubusercontent.com/7237762/223578682-67f165f4-6d51-423a-9740-96fb184dfe63.mp4",
+    "repoName": "mariogame",
+    "repoLink": "https://github.com/prg938/mariogame",
+    "desc": "<b>Mario game using HTML5 Canvas</b>. Still under development. But first 2 levels available! Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE</a>"
+  },
+  {
+    "id": 2,
+    "preview": "/hwsp.png",
+    "repoName": "html-webpack-scripts [v1.0.3]",
+    "repoLink": "https://github.com/prg938/html-webpack-scripts-plugin",
+    "desc": "<b>Plugin for <a href='https://webpack.js.org' target='_blank'>WEBPACK</a></b>. Main feature is to make external-script as inline-script. Used by at least <a href='https://github.com/prg938/html-webpack-scripts-plugin/network/dependents' target='_blank'><b>16 PEOPLE</b></a> according to dependency graph"
+  },
+  {
+    "id": 3,
+    "preview": "/wavread.png",
+    "repoName": "wavread [v1.0.0]",
+    "repoLink": "https://github.com/prg938/wavread",
+    "desc": "<b>A tiny tool written on Node.js</b> for reading wav-file. Analyses specific bytes and returns object with data"
+  },
+  {
+    "id": 4,
+    "preview": "https://user-images.githubusercontent.com/7237762/228644970-0afe67f8-413d-4ddf-a00c-7f8b52e5be04.gif",
+    "repoName": "create-react-ext [v1.0.15]",
+    "repoLink": "https://github.com/prg938/create-react-ext",
+    "desc": "<b>A tiny tool written on Node.js</b> for (re)generating Chrome extension from React & Webpack project"
+  }
+]

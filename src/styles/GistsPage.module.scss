@@ -1,0 +1,31 @@
+$max-width: 770px;
+.gists {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 350px);
+  grid-auto-rows: 325px;
+  @media screen and (max-width: $max-width) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  li {
+    list-style: none;
+    overflow: scroll;
+  }
+  li:first-child {
+    margin: 0;
+  }
+  .gist {
+    border-radius: 7px;
+    pre {
+      overflow: unset !important;
+      background-color: transparent !important;
+    }
+  }
+  .description,
+  .created {
+    color: #575757;
+    font-size: 12px;
+  }
+  .gistname {
+  }
+}
