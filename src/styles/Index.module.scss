@@ -27,11 +27,12 @@ $max-width: 700px;
   }
 
   .photoMeGroup {
+    min-height: 214px;
+    font-weight: 500;
     background-color: black;
     color: #bfbfbf;
     padding: 1rem;
     border-radius: 10px;
-    min-height: 214px;
   }
   
   .skillset {
