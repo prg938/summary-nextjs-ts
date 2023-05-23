@@ -30,6 +30,9 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div>
+          <img src="greeting.png" />
+        </div>
         <div className={styles.photoMeGroup}>
           <div className={styles.photo}>
             <img src="photo.png" />
