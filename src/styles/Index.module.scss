@@ -17,6 +17,12 @@ $max-width: 700px;
     list-style: none;
   }
   
+  .photo {
+    img {
+      margin-left: 25px;
+    }
+  }
+  
   .photoMeGroup {
     background-color: black;
     color: #bfbfbf;

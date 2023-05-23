@@ -24,7 +24,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
   return (
     <>
       <Head>
-        <title>⬛Pakov Ivan | prg938 | Next/React developer</title>
+        <title>⬛Pakov Ivan | Next/React developer | prg938</title>
         <meta name="description" content="Pakov Ivan IATE MEPHI frontend web-developer software-developer Next.js / React developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -36,7 +36,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
           </div>
           <div className={styles.me}>
             <span>
-              <b>Hello everyone!</b>🙂👋 Im Pakov Ivan / Russia. Experienced in Frontend web-development. Experienced in Fullstack development using Nest & Next. In this site you can view all information about my working experience, background, projects, skillset
+              <b>Hello everyone!</b>🙂👋 Im Pakov Ivan ➤ Russia. Experienced in Frontend web-development. Experienced in Fullstack development using Nest & Next. This site aggregates information about my skillset / working experience / background / projects
             </span>
             <div className={styles.contacts}>
               <h3>Contacts:</h3>
