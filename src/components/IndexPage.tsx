@@ -24,8 +24,8 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
   return (
     <>
       <Head>
-        <title>⬛ME</title>
-        <meta name="description" content="Pakov Ivan IATE MEPHI Frontend web-developer software-developer" />
+        <title>⬛ME | Pakov Ivan @prg938</title>
+        <meta name="description" content="Pakov Ivan IATE MEPHI Frontend web-developer software-developer Next.js / React developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
