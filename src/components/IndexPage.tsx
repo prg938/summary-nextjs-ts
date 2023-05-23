@@ -31,11 +31,11 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
       </Head>
       <main className={styles.main}>
         <div>
-          <img src="greeting.png" />
+          <img src="greeting.png" style={{width: '100%'}} />
         </div>
         <div className={styles.photoMeGroup}>
           <div className={styles.photo}>
-            <img src="photo.png" style={{width: '100%'}}/>
+            <img src="photo.png" />
           </div>
           <div className={styles.me}>
             <span>
