@@ -9,8 +9,9 @@ $max-width: 700px;
   }
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
+    color: rebeccapurple;
   }
 
   li {
@@ -44,10 +45,13 @@ $max-width: 700px;
     padding-left: 20px;
   }
 
-  .skillsetWorkExperienceGroup,
   .photoMeGroup {
     display: flex;
     gap: 50px;
+  }
+
+  .skillsetWorkExperienceGroup,
+  .photoMeGroup {
     @media screen and (max-width: $max-width) {
       flex-direction: column;
     }
@@ -58,10 +62,15 @@ $max-width: 700px;
   }
 
   .workExperience {
-    >ul>li:not(:first-child) {
-      margin-top: 25px;
+    >ul>li {
+      margin-top: 20px;
     }
-    padding-right: 10px;
+    >ul>li:first-child{
+      border-bottom: 2px solid rebeccapurple;
+      border-top: 2px solid rebeccapurple;
+      padding-bottom: 19px;
+      padding-top: 20px;
+    }
   }
 
   .contacts {
