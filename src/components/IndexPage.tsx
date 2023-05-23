@@ -98,11 +98,11 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
                   </span>
                   <span>
                     <a href="https://github.com/prg938" target="_blank">ME</a>
-                    <span>&nbsp;</span>
+                    <span>&nbsp;&nbsp;</span>
                   </span>
                   <span>
                     <a href="https://gitlab.com/bhingoleramdas143" target="_blank">Ramdas Bhingole</a>
-                    <span>&nbsp;</span>
+                    <span>&nbsp;&nbsp;</span>
                   </span>
                   <span>
                     <a href="https://github.com/sergeda" target="_blank">Serhii Dashko</a>
@@ -135,12 +135,12 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
                     <b>Team: </b>
                   </span>
                   <span>
-                    <a href="https://t.me/+79036863382" target="_blank">Yuri Vasiliev</a>
-                    <span>&nbsp;</span>
+                    <a href="https://t.me/prg938" target="_blank">ME</a>
+                    <span>&nbsp;&nbsp;</span>
                   </span>
                   <span>
-                    <a href="https://t.me/prg938" target="_blank">ME</a>
-                    <span>&nbsp;</span>
+                    <a href="https://t.me/+79036863382" target="_blank">Yuri Vasiliev</a>
+                    <span>&nbsp;&nbsp;</span>
                   </span>
                 </div>
                 <div>

@@ -50,6 +50,7 @@ $max-width: 700px;
     display: flex;
     @media screen and (max-width: $max-width) {
       flex-direction: column;
+      gap: 50px;
     }
   }
   .photoMeGroup {
