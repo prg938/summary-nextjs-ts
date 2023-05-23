@@ -24,7 +24,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
   return (
     <>
       <Head>
-        <title>⬛Pakov Ivan | Next/React developer | prg938</title>
+        <title>⬛Pakov Ivan (Next/React developer) @prg938</title>
         <meta name="description" content="Pakov Ivan IATE MEPHI frontend web-developer software-developer Next.js / React developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -143,7 +143,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
                 <div>
                   <b>Responsibilities: </b>
                   <ul>
-                    <li>—Assisting in preparing documentation using Adobe Acrobat & Microsoft Word</li>
+                    <li>◾Assisting in preparing documentation using Adobe Acrobat & Microsoft Word</li>
                   </ul>
                 </div>
               </li>
