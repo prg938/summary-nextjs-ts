@@ -24,8 +24,8 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
   return (
     <>
       <Head>
-        <title>⬛ME | Pakov Ivan @prg938</title>
-        <meta name="description" content="Pakov Ivan IATE MEPHI Frontend web-developer software-developer Next.js / React developer" />
+        <title>⬛Pakov Ivan | prg938 | Next/React developer</title>
+        <meta name="description" content="Pakov Ivan IATE MEPHI frontend web-developer software-developer Next.js / React developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -36,8 +36,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
           </div>
           <div className={styles.me}>
             <span>
-              <b>Hi everyone!</b>🙂👋 Im Pakov Ivan, Im 29YO, Russia.
-              Experienced in Frontend web-development. A little experience in Fullstack development.
+              <b>Hello everyone!</b>🙂👋 Im Pakov Ivan / Russia. Experienced in Frontend web-development. Experienced in Fullstack development using Nest & Next. In this site you can view all information about my working experience, background, projects, skillset
             </span>
             <div className={styles.contacts}>
               <h3>Contacts:</h3>
@@ -65,7 +64,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
           </div>
         </div>
         <div className={styles.background}>
-          <h3>Background: <a href="http://eng.iate.obninsk.ru" target="_blank">IATE MEPHI. Cyber Intelligence Systems Institute</a></h3>
+          <h3>Background: <a href="http://eng.iate.obninsk.ru" target="_blank">IATE MEPHI</a></h3>
           <span>
             student until 2014.
           </span>
