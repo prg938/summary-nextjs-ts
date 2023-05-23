@@ -29,14 +29,19 @@ $max-width: 700px;
   .photoMeGroup {
     min-height: 214px;
     font-weight: 500;
-    background-color: black;
-    color: #bfbfbf;
+    background-color: transparent;
+    color: black;
     padding: 1rem;
     border-radius: 10px;
+    border: 2px solid grey;
   }
   
   .skillset {
     min-width: 155px;
+    border-right: 2px solid rebeccapurple;
+    border-left: 2px solid rebeccapurple;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .skillsetWorkExperienceGroup,
@@ -56,6 +61,7 @@ $max-width: 700px;
     >ul>li:not(:first-child) {
       margin-top: 25px;
     }
+    padding-right: 10px;
   }
 
   .contacts {

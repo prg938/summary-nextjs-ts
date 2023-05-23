@@ -36,7 +36,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
           </div>
           <div className={styles.me}>
             <span>
-              <b>Hello everyone!</b>🙂👋 Im Pakov Ivan ➤ Russia. Experienced in Frontend web-development. Experienced in Fullstack development using Nest & Next. This site aggregates information about my skillset / working experience / background / projects
+              <b>Hello everyone!</b>👋 Im Pakov Ivan. Live in Russia. Experienced in Frontend web-development. Experienced in Fullstack development using Nest & Next. This site aggregates information about me
             </span>
             <div className={styles.contacts}>
               <h3>Contacts:</h3>
