@@ -20,6 +20,9 @@ $max-width: 700px;
   .photo {
     img {
       margin-left: 30px;
+      @media screen and (max-width: $max-width) {
+        margin-left: 0;
+      }
     }
   }
 
