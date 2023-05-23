@@ -35,7 +35,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
         </div>
         <div className={styles.photoMeGroup}>
           <div className={styles.photo}>
-            <img src="photo.png" />
+            <img src="photo.png" style={{width: '100%'}}/>
           </div>
           <div className={styles.me}>
             <span>
