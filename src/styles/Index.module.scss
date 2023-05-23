@@ -45,19 +45,15 @@ $max-width: 700px;
     padding-left: 20px;
   }
 
-  .photoMeGroup {
-    display: flex;
-    gap: 50px;
-  }
-
   .skillsetWorkExperienceGroup,
   .photoMeGroup {
+    display: flex;
     @media screen and (max-width: $max-width) {
       flex-direction: column;
     }
   }
-
   .photoMeGroup {
+    gap: 50px;
     align-items: center;
   }
 
