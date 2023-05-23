@@ -79,7 +79,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
             <ul>
               <li>
                 <div>
-                  <span>⬛ Frontend-developer (Angular/React) at </span>
+                  <span>⬛ React Frontend-developer at </span>
                   <a href="https://vk.com/tovarovoz" target='_blank'>Freelance/TOVAROVOZ</a>
                 </div> 
                 <div>
