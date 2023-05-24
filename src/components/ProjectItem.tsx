@@ -16,9 +16,8 @@ const ProjectItem: FunctionComponent<Partial<ProjectItem> & {link?: string}> = (
   link
 }) => {
 
-  const getImage = () => {
-    const [W, H] = previewSize!
-    const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAMAAAC6sdbXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABLUExURUM/QGhkZLKsq4eBfnJraFlXWnBucJ+bmnhxcWRcW4OHjYCChnl5eVlRVEg9QbGztZeanGNqaXNzc3t3d8jIyKOmplhiYYCDgZSTkYE3yisAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAmSURBVBhXY+BjZGJmYeAVEuDgZODi5uHlY+AXYOThYRARFROXAAAOxgE7atlquQAAAABJRU5ErkJggg=='
+  const getImage = (W: number, H: number) => {
+    const blurDataURL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIAAUABQMBIgACEQEDEQH/xAAUAAEAAAAAAAAAAAAAAAAAAAAI/9oACAEBAAAAAD//AP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIQAAAAf//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMQAAAAf//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z'
     return <Image
       src={preview}
       alt={preview}
@@ -30,13 +29,15 @@ const ProjectItem: FunctionComponent<Partial<ProjectItem> & {link?: string}> = (
   }
 
   const getPreview = () => {
+    const [W, H] = previewSize!
+    const mp4PosterPath = '/poster.jpeg'
     const isMp4 = /\.mp4/i.test(preview)
     if (isMp4) {
-      return <video loop autoPlay muted placeholder="loading preview">
+      return <video width={W} height={H} loop autoPlay poster={mp4PosterPath}>
         <source src={preview} type="video/mp4" />
       </video>
     }
-    return getImage()
+    return getImage(W, H)
   }
   
   const rn = repoName && <h4>{repoName}</h4>
