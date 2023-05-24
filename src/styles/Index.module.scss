@@ -26,16 +26,6 @@ $max-width: 700px;
       }
     }
   }
-
-  .photoMeGroup {
-    min-height: 214px;
-    font-weight: 500;
-    background-color: transparent;
-    color: black;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 2px solid grey;
-  }
   
   .skillset {
     min-width: 155px;
@@ -43,6 +33,10 @@ $max-width: 700px;
     border-left: 2px solid rebeccapurple;
     padding-right: 20px;
     padding-left: 20px;
+  }
+  
+  .skillsetWorkExperienceGroup {
+    font-size: 12px;
   }
 
   .skillsetWorkExperienceGroup,
@@ -53,9 +47,17 @@ $max-width: 700px;
       gap: 50px;
     }
   }
+  
   .photoMeGroup {
     gap: 50px;
     align-items: center;
+    min-height: 214px;
+    font-weight: 500;
+    background-color: transparent;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid grey;
   }
 
   .workExperience {
