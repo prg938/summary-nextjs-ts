@@ -33,7 +33,6 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
       </Head>
       <main className={styles.main}>
         <div>
-          { /*<img src="greeting.png" style={{width: '100%'}} />*/ }
           <Image 
             src={greetingImg}
             alt="greeting"
@@ -41,12 +40,11 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
             // @height auto-provided
             // @blurDataURL auto-provided
             placeholder="blur"
-            style={{width: '100%'}}
+            style={{width: '100%', height: 'auto'}}
             />
         </div>
         <div className={styles.photoMeGroup}>
           <div className={styles.photo}>
-          { /*<img src="photo.png" />*/ }
           <Image 
             src={photoImg}
             alt="photo"
