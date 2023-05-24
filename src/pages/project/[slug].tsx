@@ -7,19 +7,21 @@ import type {ProjectItem} from '@/types'
 
 type ProjectList = ProjectItem[]
 
+const getProjectList = async (): Promise<ProjectList> => await getLocalData('json/projects.json')
+
 const getStaticProps = async () => {
-  const projectList = await getLocalData('json/projects.json')
+  const projectList = await getProjectList()
   return {props: {projectList}}
 }
 const getStaticPaths = async () => {
-  const projectList: ProjectList = await getLocalData('json/projects.json')
+  const projectList = await getProjectList()
   const paths = projectList.map(project => ({params: {slug: String(project.id)}}))
   return {
     paths: [...paths, {params: {slug: 'all'}}],
     fallback: false
   }
 }
-export {getStaticProps, getStaticPaths}
+
 
 const ProjectSlug: NextPageWithLayout<{projectList: ProjectList}> = props => {
   return <ProjectPage {...props} />
@@ -32,3 +34,4 @@ ProjectSlug.getLayout = page => {
   )
 }
 export default ProjectSlug
+export {getStaticProps, getStaticPaths}
