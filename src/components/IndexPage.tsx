@@ -49,6 +49,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
             src={photoImg}
             alt="photo"
             placeholder="blur"
+            style={{borderRadius: '50%'}}
             />
           </div>
           <div className={styles.me}>
