@@ -5,6 +5,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import type {ProjectItem} from '@/types'
+import greetingImg from '@/../public/greeting.png'
+import photoImg from '@/../public/photo.png'
 
 const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList}) => {
 
@@ -31,11 +33,25 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
       </Head>
       <main className={styles.main}>
         <div>
-          <img src="greeting.png" style={{width: '100%'}} />
+          { /*<img src="greeting.png" style={{width: '100%'}} />*/ }
+          <Image 
+            src={greetingImg}
+            alt="greeting"
+            // @width auto-provided
+            // @height auto-provided
+            // @blurDataURL auto-provided
+            placeholder="blur"
+            style={{width: '100%'}}
+            />
         </div>
         <div className={styles.photoMeGroup}>
           <div className={styles.photo}>
-            <img src="photo.png" />
+          { /*<img src="photo.png" />*/ }
+          <Image 
+            src={photoImg}
+            alt="photo"
+            placeholder="blur"
+            />
           </div>
           <div className={styles.me}>
             <span>
