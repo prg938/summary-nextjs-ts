@@ -114,7 +114,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
                     <li>◾Using React for programming administrative part of internet-shop</li>
                     <li>◾Implementing CRUD-logic for entities by interacting with backend (REST API)</li>
                     <li>◾Implementing client-routing for entities (cats/news/goods/...)</li>
-                    <li>◾Creating and styling custom UIs. Adopting bootstrap</li>
+                    <li>◾Creating custom UIs. Adopting bootstrap</li>
                     <li>◾Implementing i18n (internationalization) for: EN/RU/UKR languages</li>
                     <li>◾Integrating third-party components like WYSIWYG-editor and file-uploader</li>
                     <li>◾Bugfixing</li>
