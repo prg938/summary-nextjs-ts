@@ -37,6 +37,9 @@ $max-width: 700px;
   
   .skillsetWorkExperienceGroup {
     font-size: 12px;
+    h3 {
+      font-size: 16px;
+    }
   }
 
   .skillsetWorkExperienceGroup,
@@ -47,7 +50,7 @@ $max-width: 700px;
       gap: 50px;
     }
   }
-  
+
   .photoMeGroup {
     gap: 50px;
     align-items: center;
