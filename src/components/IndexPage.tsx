@@ -19,7 +19,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
     return (
       <div key={id} className={styles.project}>
         <Link href={'project/' + id}>{repoName}</Link>
-        <b>{shortDesc}</b>
+        <span>{shortDesc}</span>
       </div>
     )
   })
