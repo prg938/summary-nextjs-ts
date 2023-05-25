@@ -34,7 +34,7 @@ const ProjectItem: FunctionComponent<Partial<ProjectItem> & {link?: string}> = (
     const mp4PosterPath = '/poster.jpg'
     const isMp4 = /\.mp4/i.test(preview)
     if (isMp4) {
-      return <video width={W} height={H} loop autoPlay poster={mp4PosterPath}>
+      return <video width={W} height={H} controls muted loop autoPlay poster={mp4PosterPath}>
         <source src={preview} type="video/mp4" />
       </video>
     }
