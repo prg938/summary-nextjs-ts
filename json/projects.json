@@ -5,7 +5,17 @@
     "previewSize": [456, 412],
     "repoName": "chrome-weather",
     "repoLink": "https://github.com/prg938/chrome-weather",
-    "desc": "<b>Weather extension for Chrome</b>. Written on TypeScript and React. <br/><b>Features</b>: Languages support: Ru/En, Animated chart, Geolocation, 50 hours of detailed weather information: [temperature, humidity, precipitation, wind]"
+    "desc": "<b>Weather extension for Chrome</b>. Written on TypeScript and React. <br/><br/><b>Features:</b><br/>Languages support: Ru/En<br/>Animated chart<br/>Geolocation<br/>50 hours of detailed weather information: temperature, humidity, precipitation, wind",
+    "shortDesc": "◾Weather extension for Chrome with TypeScript / React"
+  },
+  {
+    "id": 5,
+    "preview": "/summary-nextjsts.jpg",
+    "previewSize": [701, 438],
+    "repoName": "summary-nextjs-ts",
+    "repoLink": "https://github.com/prg938/summary-nextjs-ts",
+    "desc": "Summary site (<a href='https://prg938.vercel.app/' target='_blank'>prg938.vercel.app</a>) build with Next.js React Framework. Deployed to Vercel. This site aggregates information about me<br/><br/><b>Features:</b><br/><b>SEO-optimized SSG</b> (Static Site Generation with prefetched & cached data) <br/><b>CSR</b> (Client Side Rendering using SWR for client-side caching) <br/><b>next/image</b> for image optimization <br/><b>next/font/google</b> for fonts optimization <br/><b>next/link</b> for client-side routing<br/>Flexible layout system<br/>Auto-routing using file-structure",
+    "shortDesc": "◾Summary site with Next React Framework"
   },
   {
     "id": 0,
@@ -13,7 +23,8 @@
     "previewSize": [451, 326],
     "repoName": "mariogame",
     "repoLink": "https://github.com/prg938/mariogame",
-    "desc": "<b>Mario game using HTML5 Canvas</b>. Still under development. But first 2 levels available! Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE</a>"
+    "desc": "<b>Mario game using HTML5 Canvas</b>. Still under development. But first 2 levels available! Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE</a>",
+    "shortDesc": "◾Mario game using HTML5Canvas"
   },
   {
     "id": 2,
@@ -21,7 +32,8 @@
     "previewSize": [269, 141],
     "repoName": "html-webpack-scripts [v1.0.3]",
     "repoLink": "https://github.com/prg938/html-webpack-scripts-plugin",
-    "desc": "<b>Plugin for <a href='https://webpack.js.org' target='_blank'>WEBPACK</a></b>. Main feature is to make external-script as inline-script. Used by at least <a href='https://github.com/prg938/html-webpack-scripts-plugin/network/dependents' target='_blank'><b>16 PEOPLE</b></a> according to dependency graph"
+    "desc": "<b>Plugin for <a href='https://webpack.js.org' target='_blank'>WEBPACK</a></b>. Main feature is to make external-script as inline-script. Used by at least <a href='https://github.com/prg938/html-webpack-scripts-plugin/network/dependents' target='_blank'><b>16 PEOPLE</b></a> according to dependency graph",
+    "shortDesc": "◾Plugin for Webpack for making inline-scripts"
   },
   {
     "id": 3,
@@ -29,7 +41,8 @@
     "previewSize": [269, 274],
     "repoName": "wavread [v1.0.0]",
     "repoLink": "https://github.com/prg938/wavread",
-    "desc": "<b>A tiny tool written on Node.js</b> for reading wav-file. Analyses specific bytes and returns object with data"
+    "desc": "<b>A tiny tool written on Node.js</b> for reading wav-file. Analyses specific bytes and returns object with data",
+    "shortDesc": "◾Node-lib for reading .wav"
   },
   {
     "id": 4,
@@ -37,6 +50,7 @@
     "previewSize": [753, 294],
     "repoName": "create-react-ext [v1.0.15]",
     "repoLink": "https://github.com/prg938/create-react-ext",
-    "desc": "<b>A tiny tool written on Node.js</b> for (re)generating Chrome extension from React & Webpack project"
+    "desc": "<b>A tiny tool written on Node.js</b> for (re)generating Chrome extension from React & Webpack project",
+    "shortDesc": "◾Node-tool for generating extension for Google Chrome"
   }
 ]

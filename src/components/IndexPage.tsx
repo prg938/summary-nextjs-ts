@@ -15,10 +15,11 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
   }, [])
 
   const projects = projectList.map(project => {
-    const {id, repoName} = project
+    const {id, repoName, shortDesc} = project
     return (
       <div key={id} className={styles.project}>
         <Link href={'project/' + id}>{repoName}</Link>
+        <b>{shortDesc}</b>
       </div>
     )
   })

@@ -3,14 +3,10 @@
   >div {
     margin: 10px 0;
   }
-  img[src$="7388.gif"] {
-    width: 332px;
+  img[alt$="7388.gif"] {
+    width: 350px;
+    height: auto;
     border: 1px solid transparent;
     border-radius: 7px;
-  }
-  .desc {
-    a {
-      text-decoration: underline;
-    }
   }
 }

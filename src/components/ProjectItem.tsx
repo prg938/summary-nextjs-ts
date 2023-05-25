@@ -13,6 +13,7 @@ const ProjectItem: FunctionComponent<Partial<ProjectItem> & {link?: string}> = (
   repoName,
   repoLink,
   desc,
+  shortDesc,
   link
 }) => {
 
@@ -57,7 +58,7 @@ const ProjectItem: FunctionComponent<Partial<ProjectItem> & {link?: string}> = (
   </>
 
   const result = <div className={styles.item}>
-    {link ? <div><Link href={link}>{content}</Link></div> : content}
+    {link ? <div><Link href={link}>{content}</Link>{link ? shortDesc : null}</div> : content}
   </div>
 
   return result

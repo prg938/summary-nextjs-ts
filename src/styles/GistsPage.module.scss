@@ -79,7 +79,8 @@ $max-width: 770px;
     font-size: 12px;
   }
   .gistname {
-    font-weight: bold;
-    color: rgb(59, 41, 77);
+    a {
+      color: rgb(59, 41, 77);
+    }
   }
 }

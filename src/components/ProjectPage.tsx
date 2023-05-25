@@ -15,8 +15,8 @@ const ProjectPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectLi
 
   if (slug === 'all') {
     projectItemComponents = projectList.map(project => {
-      const {id, repoName, repoLink} = project
-      return <ProjectItemComponent key={id} repoName={repoName} link={'/project/' + id} />
+      const {id, repoName, repoLink, shortDesc} = project
+      return <ProjectItemComponent key={id} repoName={repoName} shortDesc={shortDesc} link={'/project/' + id} />
     })
   }
   else {
