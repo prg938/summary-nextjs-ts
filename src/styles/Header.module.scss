@@ -2,6 +2,7 @@
   --link-color: black;
   --item-hover-color: black;
   --item-current-color: black;
+  z-index: 2;
   position: sticky;
   top: 0;
   padding: 1rem;
@@ -21,6 +22,13 @@
     &.current {
       color: var(--item-current-color);
       font-weight: 700;
+      a:after {
+        display: block;
+        position: relative;
+        content: "";
+        border-bottom: 2px solid black;
+        top: 5px;
+      }
     }
     a {
       position: relative;

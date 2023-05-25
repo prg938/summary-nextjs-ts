@@ -1,7 +1,7 @@
 
 import styles from '@/styles/GistsPage.module.scss'
 import * as Beautifier from 'js-beautify'
-import {FunctionComponent} from 'react'
+import {FunctionComponent, MouseEvent, forwardRef, useImperativeHandle, useRef, useState} from 'react'
 import {github} from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import useSWR from 'swr'
@@ -52,6 +52,13 @@ interface Gist {
   }
 }
 
+type GistUnwrapperRefType = {
+  show: (component: JSX.Element) => void,
+  hide: () => void
+}
+
+const GistFileComponents: JSX.Element[] = []
+
 const GistFileComponent: FunctionComponent<{URL: string}> = ({URL}) => {
   const {data = String(), error, isLoading} = useSWR<string>(URL, TextFetcher, {
     revalidateIfStale: false,
@@ -69,14 +76,40 @@ const GistFileComponent: FunctionComponent<{URL: string}> = ({URL}) => {
     return <FetchFailText URL={URL} />
   return (
     <div className={styles.gist}>
-      <SyntaxHighlighter language={language} style={github} customStyle={customStyle}>
+      <SyntaxHighlighter showLineNumbers={true} language={language} style={github} customStyle={customStyle}>
         {result}
       </SyntaxHighlighter>
     </div>
   )
 }
 
+const GistUnwrapper = forwardRef<GistUnwrapperRefType, {}>((props, ref) => {
+  const divRef = useRef<HTMLDivElement>(null)
+  const [component, setComponent] = useState<JSX.Element>()
+  const setVisibility = (value: string) => divRef.current!.style.display = value
+  const show = (component: JSX.Element) => {
+    setVisibility('block')
+    setComponent(component)
+  }
+  const hide = () => {
+    setVisibility('none')
+  }
+  useImperativeHandle(ref, () => ({
+    show: show,
+    hide: hide
+  }))
+  const click = (event: MouseEvent) => {
+    event.stopPropagation()
+    hide()
+  }
+  return <div ref={divRef} className={styles.gistUnwrapper}>
+    <div onClick={click} className={styles.gistUnwrapperCloseButton}>CLOSE THIS GIST</div>
+    {component}
+  </div>
+})
+
 export default () => {
+  const GistUnwrapperRef = useRef<GistUnwrapperRefType>(null)
   const GithubUsername = 'prg938'
   const GistURL = 'https://gist.github.com/'
   const URL = `https://api.github.com/users/${GithubUsername}/gists`
@@ -84,6 +117,11 @@ export default () => {
   const defaultDescription = 'No description'
   const gists: JSX.Element[] = []
   const {data, error, isLoading} = useSWRImmutable<Gist[]>([URL, 'application/vnd.github+json'], JSONFetcherWithAcceptHeader)
+
+  const gistClick = (event: MouseEvent<HTMLLIElement>) => {
+    const liIndex = event.currentTarget.dataset.index
+    GistUnwrapperRef.current?.show(GistFileComponents[Number(liIndex)])
+  }
 
   if (isLoading)
     return <FetchingText />
@@ -102,7 +140,9 @@ export default () => {
         const {filename, raw_url, type, size, language} = files[key]
         const ownerLoginLink = GistURL + GithubUsername
         const gistLink = GistURL + GithubUsername + '/' + id
-        gists[gists.length] = <li key={id}>
+        const GFC = <GistFileComponent URL={raw_url} />
+        GistFileComponents[GistFileComponents.length] = GFC
+        gists[gists.length] = <li key={id} data-index={i} onClick={gistClick}>
           <div className={styles.gistname}>
             <ExternalLink data={[ownerLoginLink, ownerLogin]} />
             <span> / </span>
@@ -110,14 +150,15 @@ export default () => {
           </div>
           <div className={styles.created}>created: {preparedDate}</div>
           <div className={styles.description}>{description || defaultDescription}</div>
-          <GistFileComponent URL={raw_url} />
+          {GFC}
         </li>
       }
     }
   }
   
   return <>
-    <h2>Gist-list from GitHub API</h2>
+    <GistUnwrapper ref={GistUnwrapperRef} />
+    <h2 className={styles.title}>Gists fetched using GitHub API</h2>
     <h5><ExternalLink data={[GithubDocsURL, GithubDocsURL]} /></h5>
     <br/>
     <ul className={styles.gists}>{gists}</ul>
