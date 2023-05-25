@@ -41,7 +41,7 @@ const ProjectItem: FunctionComponent<Partial<ProjectItem> & {link?: string}> = (
     return getImage(W, H)
   }
   
-  const rn = repoName && <h4>{repoName}</h4>
+  const rn = repoName && <h4>{link ? repoName : <span style={{fontSize: '30px'}}>{repoName}</span>}</h4>
   const rl = repoLink && <>
     <b>Repo: </b>
     <a href={repoLink} target="_blank">{repoLink}</a>
