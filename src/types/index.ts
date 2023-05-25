@@ -1,6 +1,6 @@
 
 export interface ProjectItem {
-  id: number
+  id: string
   preview: string
   previewSize: [number, number] | undefined
   repoName: string

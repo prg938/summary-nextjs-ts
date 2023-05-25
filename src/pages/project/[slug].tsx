@@ -15,7 +15,7 @@ const getStaticProps = async () => {
 }
 const getStaticPaths = async () => {
   const projectList = await getProjectList()
-  const paths = projectList.map(project => ({params: {slug: String(project.id)}}))
+  const paths = projectList.map(project => ({params: {slug: project.id}}))
   return {
     paths: [...paths, {params: {slug: 'all'}}],
     fallback: false

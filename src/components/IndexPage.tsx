@@ -11,7 +11,7 @@ import photoImg from '@/../public/photo.png'
 const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList}) => {
 
   useEffect(() => {
-    console.log('on client once')
+    console.log('debug: on client once')
   }, [])
 
   const projects = projectList.map(project => {
@@ -27,8 +27,8 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
   return (
     <>
       <Head>
-        <title>⬛Pakov Ivan (React-developer) prg938</title>
-        <meta name="description" content="Pakov Ivan (frontend web-developer / software-developer). Next / Next / React developer" />
+        <title>⬛PRG938/PAKOV IVAN/Developer-Frontend-React-Next</title>
+        <meta name="description" content=" PRG938 Pakov Ivan (frontend web-developer / software-developer). Next / Next / React developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -4,6 +4,7 @@ import * as Beautifier from 'js-beautify'
 import {FunctionComponent, MouseEvent, forwardRef, useImperativeHandle, useRef, useState} from 'react'
 import {github} from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 import SyntaxHighlighter from 'react-syntax-highlighter'
+import Head from 'next/head'
 import useSWR from 'swr'
 import useSWRImmutable from 'swr/immutable' /* =useSWR(key, fetcher, {revalidateIfStale: false, revalidateOnFocus: false, revalidateOnReconnect: false}): https://swr.vercel.app/docs/revalidation#disable-automatic-revalidations */
 
@@ -157,6 +158,10 @@ export default () => {
   }
   
   return <>
+    <Head>
+      <title>⬛PRG938/GISTS</title>
+      <meta name="description" content="Gists of PRG938 fetched from GitHub" />
+    </Head>
     <GistUnwrapper ref={GistUnwrapperRef} />
     <h2 className={styles.title}>Gists fetched using GitHub API</h2>
     <h5><ExternalLink data={[GithubDocsURL, GithubDocsURL]} /></h5>

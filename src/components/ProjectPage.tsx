@@ -10,7 +10,7 @@ const ProjectPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectLi
   const router = useRouter()
   const {slug} = router.query
   const handleGoBack = () => router.back()
-  let title = '⬛/PROJECTS'
+  let title = '⬛PRG938/PROJECTS'
   let projectItemComponents: JSX.Element[] = []
 
   if (slug === 'all') {
@@ -20,15 +20,17 @@ const ProjectPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectLi
     })
   }
   else {
-    const project = projectList.find(project => project.id === Number(slug)) as ProjectItem
-    title = '⬛/' + project.repoName
-    projectItemComponents = [<ProjectItemComponent key={project.id} {...project} />]
+    const project = projectList.find(({id}) => id === String(slug)) as ProjectItem
+    const {id, repoName} = project
+    title = title + '/' + repoName
+    projectItemComponents = [<ProjectItemComponent key={id} {...project} />]
   }
 
   return (
     <>
       <Head>
         <title>{title}</title>
+        <meta name="description" content="Projects of PRG938" />
       </Head>
       <main className={styles.main}>
         <div onClick={handleGoBack} className={styles.goBack}>
