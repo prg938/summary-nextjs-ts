@@ -6,7 +6,7 @@
     "repoName": "chrome-weather",
     "repoLink": "https://github.com/prg938/chrome-weather",
     "desc": "<b>Weather extension for Chrome</b>. Written on TypeScript and React. <br/><br/><b>Features:</b><br/>Languages support: Ru/En<br/>Animated chart<br/>Geolocation<br/>50 hours of detailed weather information: temperature, humidity, precipitation, wind",
-    "shortDesc": "◾Weather extension for Chrome with TypeScript / React"
+    "shortDesc": "◾Weather extension for Chrome with TypeScript + React"
   },
   {
     "id": "summary-nextjs-ts",
@@ -14,7 +14,7 @@
     "previewSize": [388, 438],
     "repoName": "summary-nextjs-ts",
     "repoLink": "https://github.com/prg938/summary-nextjs-ts",
-    "desc": "Summary site (<a href='https://prg938.vercel.app/' target='_blank'>prg938.vercel.app</a>) build with Next.js React Framework. Deployed to Vercel. This site aggregates information about me<br/><br/><b>Features:</b><br/><b>SEO-optimized SSG</b> (Static Site Generation with prefetched & cached data) <br/><b>CSR</b> (Client Side Rendering using SWR for client-side caching) <br/><b>next/image</b> for image optimization <br/><b>next/font/google</b> for fonts optimization <br/><b>next/link</b> for client-side routing<br/>Flexible layout system<br/>Auto-routing using file-structure",
+    "desc": "Summary site <a href='https://prg938.vercel.app/' target='_blank'>prg938.vercel.app</a> build with Next.js React Framework. Deployed to Vercel. This site aggregates information about me<br/><br/><b>Features:</b><br/><b>SEO-optimized SSG</b> - Static Site Generation with prefetched & cached data <br/><b>CSR</b> Client Side Rendering using <b>SWR</b> for client-side caching <br/><b>next/image</b> for image optimization <br/><b>next/font/google</b> for fonts optimization <br/><b>next/link</b> for client-side routing<br/>Flexible layout system<br/>Auto-routing using file-structure",
     "shortDesc": "◾Summary site with Next React Framework"
   },
   {
@@ -24,7 +24,7 @@
     "repoName": "mariogame",
     "repoLink": "https://github.com/prg938/mariogame",
     "desc": "<b>Mario game using HTML5 Canvas</b>. Still under development. But first 2 levels available! Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE</a>",
-    "shortDesc": "◾Mario game using HTML5Canvas"
+    "shortDesc": "◾Mario game using HTML5 + Canvas"
   },
   {
     "id": "html-webpack-scripts-plugin",
@@ -51,6 +51,6 @@
     "repoName": "create-react-ext [v1.0.15]",
     "repoLink": "https://github.com/prg938/create-react-ext",
     "desc": "<b>A tiny tool written on Node.js</b> for (re)generating Chrome extension from React & Webpack project",
-    "shortDesc": "◾Node-tool for generating extension for Google Chrome"
+    "shortDesc": "◾Node-lib for generating GoogleChrome-extension"
   }
 ]

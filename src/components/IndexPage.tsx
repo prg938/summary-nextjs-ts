@@ -68,6 +68,12 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <h3>Contacts:</h3>
               <ul>
                 <li>
+                  <span>Telegram: </span>
+                  <a href="https://t.me/prg938" target="_blank">
+                    <b>prg938</b>
+                  </a>
+                </li>
+                <li>
                   <span>Email: </span>
                   <a href="mailto:prg938@mail.ru" target="_blank">
                     <b>prg938@mail.ru</b>
@@ -76,12 +82,6 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
                 <li>
                   <span>Github: </span>
                   <a href="https://github.com/prg938" target="_blank">
-                    <b>prg938</b>
-                  </a>
-                </li>
-                <li>
-                  <span>Telegram: </span>
-                  <a href="https://t.me/prg938" target="_blank">
                     <b>prg938</b>
                   </a>
                 </li>
