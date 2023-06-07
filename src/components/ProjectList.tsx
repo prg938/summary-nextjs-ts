@@ -32,7 +32,7 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
     if (id === 'chrome-weather' || id === 'masonrylayout-tsx-react') {
       return <div key={id} className={styles.project}>
         <h3><Link href={'/project/' + id}>{repoName}</Link></h3>
-        <h4> {shortDesc}</h4>
+        <div> {shortDesc}</div>
         <Image
           src={preview}
           alt={'preview'}
@@ -47,7 +47,7 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
     return (
       <div key={id} className={styles.project}>
         <h4><Link href={'/project/' + id}>{repoName}</Link></h4>
-        <h5> {shortDesc}</h5>
+        <div> {shortDesc}</div>
       </div>
     )
   })
