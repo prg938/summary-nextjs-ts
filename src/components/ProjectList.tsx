@@ -53,9 +53,9 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
     }
     return (
       <div key={id} className={styles.project}>
-        <h4>
+        <h3>
           <Link href={projectHref}>{repoName}</Link>
-        </h4>
+        </h3>
         <div>{shortDesc}</div>
       </div>
     )
