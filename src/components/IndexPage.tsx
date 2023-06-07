@@ -7,22 +7,11 @@ import Link from 'next/link'
 import type {ProjectItem} from '@/types'
 import greetingImg from '@/../public/greeting.png'
 import photoImg from '@/../public/photo.png'
+import ProjectList from './ProjectList'
 
 const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList}) => {
 
-  useEffect(() => {
-    console.log('debug: on client once')
-  }, [])
-
-  const projects = projectList.map(project => {
-    const {id, repoName, shortDesc} = project
-    return (
-      <div key={id} className={styles.project}>
-        <Link href={'project/' + id}>{repoName}</Link>
-        <span>{shortDesc}</span>
-      </div>
-    )
-  })
+  useEffect(() => { console.log('debug: on client once') }, [])
   
   return (
     <>
@@ -87,6 +76,12 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+        <div className={styles.projects}>
+          <h1 className={styles.myProjectsTitle}>My project List:</h1>
+          <div>
+            <ProjectList projectList={projectList} />
           </div>
         </div>
         <div className={styles.background}>
@@ -182,7 +177,9 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <li>Node.js</li>
               <li>TypeScript</li>
               <li>React</li>
-              <li>Redux (+RTK&RTKQ)</li>
+              <li>Redux</li>
+              <li>Redux Toolkit (RTK)</li>
+              <li>Redux Toolkit Query</li>
               <li>Next.js</li>
               <li>SWR</li>
               <li>HTML5</li>
@@ -192,12 +189,6 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <li>VS Code</li>
               <li>Git / Github / Gitlab</li>
             </ul>
-          </div>
-        </div>
-        <div className={styles.projects}>
-          <h3>Project List:</h3>
-          <div>
-            {projects}
           </div>
         </div>
       </main>

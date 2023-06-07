@@ -5,6 +5,7 @@ import {useRouter} from 'next/router'
 import {ProjectItem} from '@/types'
 import {FunctionComponent} from 'react'
 import ProjectItemComponent from './ProjectItem'
+import ProjectList from './ProjectList'
 
 const ProjectPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList}) => {
   const router = useRouter()
@@ -14,10 +15,7 @@ const ProjectPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectLi
   let projectItemComponents: JSX.Element[] = []
 
   if (slug === 'all') {
-    projectItemComponents = projectList.map(project => {
-      const {id, repoName, repoLink, shortDesc} = project
-      return <ProjectItemComponent key={id} repoName={repoName} shortDesc={shortDesc} link={'/project/' + id} />
-    })
+    return <ProjectList projectList={projectList} justifyContainer='center' />
   }
   else {
     const project = projectList.find(({id}) => id === String(slug)) as ProjectItem

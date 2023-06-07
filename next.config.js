@@ -10,4 +10,5 @@ module.exports = {
     }]
   },
   reactStrictMode: false,
+  transpilePackages: ['masonrylayout-tsx-react']
 }
