@@ -98,11 +98,11 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <li>
                 <div>
                   <span>⬛ React Frontend-developer at </span>
-                  <a href="https://vk.com/tovarovoz" target='_blank'>Freelance/TOVAROVOZ</a>
+                  <a href="https://vk.com/tovarovoz" target='_blank'>Freelance@TOVAROVOZ</a>
                 </div> 
                 <div>
                   <b>Duration: </b>
-                  <span>~1.2 years(until Jun 11/2016)</span>
+                  <span>~1.3 years(until Jun 11/2016)</span>
                 </div>
                 <div>
                   <b>Repo: </b>
@@ -178,8 +178,8 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <li>TypeScript</li>
               <li>React</li>
               <li>Redux</li>
-              <li>Redux Toolkit (RTK)</li>
-              <li>Redux Toolkit Query</li>
+              <li>RTK</li>
+              <li>RTK Query</li>
               <li>Next.js</li>
               <li>SWR</li>
               <li>HTML5</li>
