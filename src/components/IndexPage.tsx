@@ -16,7 +16,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
   return (
     <>
       <Head>
-        <title>⬛PRG938/PAKOV IVAN/Developer-Frontend-React-Next</title>
+        <title>⬛PRG938/Frontend-React-Next</title>
         <meta name="description" content=" PRG938 Pakov Ivan (frontend web-developer / software-developer). Next / Next / React developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -51,7 +51,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <Link href="https://nestjs.com/" target="_blank">Nest</Link>
               <span> & </span>
               <Link href="https://nextjs.org/" target="_blank">Next</Link>
-              <span>. This site aggregates information about me</span>
+              <span></span>
             </span>
             <div className={styles.contacts}>
               <h3>Contacts:</h3>
@@ -79,7 +79,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
           </div>
         </div>
         <div className={styles.projects}>
-          <h1 className={styles.myProjectsTitle}>My project List:</h1>
+          <h1 className={styles.myProjectsTitle}>projects:</h1>
           <div>
             <ProjectList projectList={projectList} />
           </div>

@@ -1,4 +1,15 @@
 
 .project {
-  width: 330px;
+  width: 300px;
+  border-radius: 7px;
+  border: 1px solid transparent;
+
+  .title {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .desc {
+    font-size: 13px;
+    font-weight: 600;
+  }
 }

@@ -16,30 +16,31 @@ interface ProjectListType {
 const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex-start'}) => {
   const blurDataURL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIAAUABQMBIgACEQEDEQH/xAAUAAEAAAAAAAAAAAAAAAAAAAAI/9oACAEBAAAAAD//AP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIQAAAAf//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMQAAAAf//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z'
   const animate = '.4s ease'
-  const gap = 25
+  const gap = 15
   const pathProject = '/project/'
   const list = projectList.map(project => {
     const {id, repoName, shortDesc, previewSize, preview} = project
     const projectHref = pathProject + id
     if (id === 'mariogame') {
       return <div key={id} className={styles.project}>
-        <div style={{fontSize: '35px'}}>
+        <div style={{fontSize: '20px'}}>
           <div style={{textTransform: 'uppercase'}}>
-            <Link href={projectHref}>{repoName}🎮</Link>
+            🎮<Link href={projectHref}>{repoName}</Link>
           </div>
         </div>
         <div>
-          <div>{shortDesc}</div>
-          <h2>Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE</a></h2>
+          <div className={styles.desc}>{shortDesc}
+            <h3>Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE</a></h3>
+          </div>
         </div>
       </div>
     }
     if (id === 'chrome-weather' || id === 'masonrylayout-tsx-react') {
       return <div key={id} className={styles.project}>
-        <h3>
+        <h3 className={styles.title}>
           <Link href={projectHref}>{repoName}</Link>
         </h3>
-        <div> {shortDesc}</div>
+        <div className={styles.desc}>{shortDesc}</div>
         <Image
           src={preview}
           alt={'preview'}
@@ -53,10 +54,10 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
     }
     return (
       <div key={id} className={styles.project}>
-        <h3>
+        <h3 className={styles.title}>
           <Link href={projectHref}>{repoName}</Link>
         </h3>
-        <div>{shortDesc}</div>
+        <div className={styles.desc}>{shortDesc}</div>
       </div>
     )
   })
