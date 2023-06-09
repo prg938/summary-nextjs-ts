@@ -18,16 +18,22 @@
     list-style: none;
   }
   ul li {
+    transition: all .1s ease;
     margin-right: 20px;
+    padding: 20px;
+    border-radius: 7px;
     &.current {
-      color: var(--item-current-color);
-      font-weight: 700;
+      background-color: darkgray;
       a:after {
         display: block;
         position: relative;
         content: "";
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid grey;
         top: 5px;
+      }
+      a {
+        color: var(--item-current-color);
+        font-weight: 700;
       }
     }
     a {
@@ -50,6 +56,8 @@
     cursor: pointer;
     transform: rotate(0deg);
     transition: .1s ease;
+    padding-left: 0;
+    padding-right:0;
   }
   ul li:first-child:hover {
     transform: rotate(45deg);
