@@ -16,7 +16,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
   return (
     <>
       <Head>
-        <title>⬛PRG938/Frontend-React-Next</title>
+        <title>⬛PRG938/Main</title>
         <meta name="description" content=" PRG938 Pakov Ivan (frontend web-developer / software-developer). Next / Next / React developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
