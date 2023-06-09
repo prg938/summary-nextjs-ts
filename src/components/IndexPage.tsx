@@ -45,7 +45,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
           <div className={styles.me}>
             <span>
               <b>Hello everyone!</b>
-              <span> 👋 Im Pakov Ivan. Live in Russia. Experienced in Frontend/</span>
+              <span> 🖐️🙂 Im Pakov Ivan. Live in Russia. Experienced in Frontend/</span>
               <Link href="https://react.dev/" target="_blank">React</Link>
               <span> web-development. Little experienced in Fullstack development using </span>
               <Link href="https://nestjs.com/" target="_blank">Nest</Link>
