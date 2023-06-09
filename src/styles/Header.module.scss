@@ -49,6 +49,7 @@
   ul li:first-child {
     cursor: pointer;
     transform: rotate(0deg);
+    transition: .1s ease;
   }
   ul li:first-child:hover {
     transform: rotate(45deg);

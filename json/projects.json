@@ -6,7 +6,7 @@
     "repoName": "mariogame",
     "repoLink": "https://github.com/prg938/mariogame",
     "desc": "<b>Mario game using HTML5 Canvas</b>. Still under development. But first 2 levels available! Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE</a>",
-    "shortDesc": "Mario game using HTML5 + Canvas"
+    "shortDesc": "Mario game using Canvas. 2 levels ready to be played! Other levels still under development"
   },
   {
     "id": "chrome-weather",
@@ -15,7 +15,7 @@
     "repoName": "chrome-weather",
     "repoLink": "https://github.com/prg938/chrome-weather",
     "desc": "<b>Weather extension for Chrome</b>. Written on TypeScript and React. <br/><b>Features:</b><br/>Languages support: Ru/En<br/>Animated chart<br/>Geolocation<br/>50 hours of detailed weather information: temperature, humidity, precipitation, wind",
-    "shortDesc": "Weather extension for Chrome with TypeScript + React"
+    "shortDesc": "Weather extension for Google Chrome with TypeScript and React"
   },
   {
     "id": "masonrylayout-tsx-react",

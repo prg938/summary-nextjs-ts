@@ -2,15 +2,24 @@
 import styles from '@/styles/Header.module.scss'
 import Link from 'next/link'
 import {useRouter, withRouter} from 'next/router'
+import {useEffect, useState} from 'react'
 
 export default () => {
+  const emojiList = ['👾','😎','🙂','🦨','🍏','😈','😇','🥶','👽','😸','🤖','🐷','🐼','🦄','🐸','🦎','🦔','🐜','🐞','🕷️','🦾','🥷','💪','🎃','💎','🧱','🛖','📱','🍟','🍖','🧁','🍪','🍸','🥤','🥥','🍆','🍄','🍁','🌚','🌈','♾️','☢️','◼️','🔶']
+  const randomize = (min:number, max:number) => Math.round(min - 0.5 + Math.random() * (max - min + 1))
+  const randomizeEmoji = () => emojiList[randomize(0, emojiList.length - 1)]
+  const [emoji, setEmoji] = useState('◼️')
   const router = useRouter()
   const {pathname} = router
   const resolveClassName = (eq: string, em = '') => (pathname === eq) ? styles.current : em
+  useEffect(() => { 
+    console.log('debug: header emoji set')
+    setEmoji(randomizeEmoji())
+  }, [])
   return (
     <header className={styles.header}>
       <ul>
-        <li>⬛</li>
+        <li>{emoji}</li>
         <li className={resolveClassName('/')}>
           <Link href="/">ME</Link>
         </li>

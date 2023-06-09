@@ -25,22 +25,22 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
       return <div key={id} className={styles.project}>
         <div style={{fontSize: '20px'}}>
           <div style={{textTransform: 'uppercase'}}>
-            🎮<Link href={projectHref}>{repoName}</Link>
+            <Link href={projectHref}>{repoName}</Link>
           </div>
         </div>
         <div>
           <div className={styles.desc}>{shortDesc}
-            <h3>Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE</a></h3>
+            <h3>Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE🎮</a></h3>
           </div>
         </div>
       </div>
     }
     if (id === 'chrome-weather' || id === 'masonrylayout-tsx-react') {
-      return <div key={id} className={styles.project}>
+      return <div key={id} className={styles.project} style={id === 'chrome-weather' ? {overflow: 'hidden', height: '280px'} : {}}>
         <h3 className={styles.title}>
           <Link href={projectHref}>{repoName}</Link>
         </h3>
-        <div className={styles.desc}>{shortDesc}</div>
+        <p className={styles.desc}>{shortDesc}</p>
         <Image
           src={preview}
           alt={'preview'}
