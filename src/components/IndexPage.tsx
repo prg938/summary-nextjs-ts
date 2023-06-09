@@ -129,13 +129,13 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
                 <div>
                   <b>Responsibilities: </b>
                   <ul>
-                    <li>◾Using React for programming administrative part of internet-shop</li>
-                    <li>◾Implementing CRUD for entities by interacting with backend (REST API)</li>
-                    <li>◾Implementing client-routing for entities (cats/news/goods/...)</li>
-                    <li>◾Creating custom UIs. Adopting bootstrap</li>
-                    <li>◾Implementing i18n (internationalization) for: EN/RU/UKR languages</li>
-                    <li>◾Integrating third-party components like WYSIWYG-editor and file-uploader</li>
-                    <li>◾Bugfixing</li>
+                    <li>◾Creating logic for admin-panel of TOVAROVOZ using React</li>
+                    <li>◾Creating custom UIs</li>
+                    <li>◾Implementing CRUD for entities by interacting with backend REST API</li>
+                    <li>◾Implementing client-routing for entities (cats/news/goods/etc)</li>
+                    <li>◾Implementing i18n (internationalization) for 3 languages</li>
+                    <li>◾Integrating 3rd-party components like WYSIWYG-editor and file-uploader</li>
+                    <li>◾Bugfixing within project</li>
                   </ul>
                 </div>
               </li>
