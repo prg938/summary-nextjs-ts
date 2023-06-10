@@ -18,6 +18,7 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
   const animate = '.1s ease'
   const gap = 15
   const pathProject = '/project/'
+  const w100 = {width: '100%', height: 'auto'}
   const list = projectList.map(project => {
     const {id, repoName, shortDesc, previewSize, preview} = project
     const projectHref = pathProject + id
@@ -36,6 +37,10 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
       </div>
     }
     if (id === 'chrome-weather' || id === 'masonrylayout-tsx-react') {
+      let imageStyle = {marginTop: '5px'}
+      if (id === 'chrome-weather') {
+        imageStyle = {...imageStyle, ...w100, ...{borderRadius: '7px'}}
+      }
       return <div key={id} className={styles.project} style={id === 'chrome-weather' ? {overflow: 'hidden', height: '280px'} : {}}>
         <h3 className={styles.title}>
           <Link href={projectHref}>{repoName}</Link>
@@ -48,7 +53,7 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
           height={previewSize![1]}
           placeholder='blur'
           blurDataURL={blurDataURL}
-          style={{width: id === 'masonrylayout-tsx-react' ? 'auto' : '100%', height: 'auto', borderRadius: '7px', marginTop: '5px' }}
+          style={imageStyle}
         />
       </div>
     }
