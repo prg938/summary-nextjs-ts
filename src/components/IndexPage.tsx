@@ -50,7 +50,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <Link href="https://nestjs.com/" target="_blank">Nest</Link>
               <span> & </span>
               <Link href="https://nextjs.org/" target="_blank">Next</Link>
-              <span></span>
+              <span>. I like to create things, learn new stuff, work within interesting projects</span>
             </span>
             <div className={styles.contacts}>
               <h3>Contacts:</h3>
