@@ -48,7 +48,7 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
           height={previewSize![1]}
           placeholder='blur'
           blurDataURL={blurDataURL}
-          style={{width: '100%', height: 'auto', borderRadius: '7px' }}
+          style={{width: '100%', height: 'auto', borderRadius: '7px', marginTop: '5px' }}
         />
       </div>
     }
