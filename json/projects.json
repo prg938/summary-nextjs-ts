@@ -19,8 +19,8 @@
   },
   {
     "id": "masonrylayout-tsx-react",
-    "preview": "https://user-images.githubusercontent.com/7237762/243566394-47b9d96b-cb31-46c8-a9aa-2b9251394d28.jpg",
-    "previewSize": [354, 181],
+    "preview": "https://user-images.githubusercontent.com/7237762/244848390-2b435ea0-63e1-456b-affe-9c6ba3f169e9.png",
+    "previewSize": [109, 109],
     "repoName": "masonrylayout",
     "repoLink": "https://github.com/prg938/masonrylayout-tsx-react",
     "desc": "masonrylayout-tsx-react <b>exports MasonryLayout component</b> from index.tsx. It allows to create grid layout based on columns with auto-placement and optimized usage of Y-space by reducing unnecessary gaps<br/>Live Demo: <a href='/masonry'>HERE</a>",
