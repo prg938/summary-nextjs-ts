@@ -27,7 +27,7 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
   const w80 = {width: '80%', height: 'auto'}
   const imageStyle = {marginTop: '5px', borderRadius: '7px'}
   const fs20px = {fontSize: '20px'}
-  const ttu = {textTransform: 'uppercase'}
+  const ttu = {textTransform: 'uppercase'} as const
   
   const list = projectList.map(project => {
     const {id, repoName, shortDesc, previewSize, preview} = project
