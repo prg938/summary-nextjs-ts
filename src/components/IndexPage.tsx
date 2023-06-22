@@ -47,7 +47,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <span> 🖐️🙂 Im Pakov Ivan. Live in Russia. Experienced in Frontend/</span>
               <Link href="https://react.dev/" target="_blank">React</Link>/<Link href="https://nextjs.org/" target="_blank">Next</Link>
               <span> web-development. Also Backend <Link href="https://nodejs.org/" target="_blank">node.js</Link>/<Link href="https://www.typescriptlang.org/" target="_blank">ts</Link>/<Link href="https://nestjs.com/" target="_blank">Nest</Link> Developer. </span>
-              <span>. I like to create things, learn new stuff, work within interesting projects</span>
+              <span>I like to create things, learn new stuff, work within interesting projects</span>
             </span>
             <div className={styles.contacts}>
               <h3>_:</h3>
@@ -162,6 +162,17 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
                   <ul>
                     <li>◾Assisting in preparing documentation using Adobe Acrobat & Microsoft Word</li>
                   </ul>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span>
+                    ⬛ Currently looking for job as a <b>Junior Backend developer</b> / <b>JavaScript Frontend Developer</b> / <b>React Frontend Developer</b>
+                  </span>
+                </div>
+                <div>
+                  <b>Duration: </b>
+                  <span>from 2023 - until now</span>
                 </div>
               </li>
             </ul>
