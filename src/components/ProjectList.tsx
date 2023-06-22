@@ -50,9 +50,6 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
       if (id as string === ProjectID.ChromeWeather) {
         imageStyle = {...imageStyle, ...w80}
       }
-      else {
-        imageStyle = {...imageStyle, ...w100}
-      }
       return <div key={id} className={styles.project}>
         <h3 className={styles.title}>
           <Link href={projectHref}>{repoName}</Link>
