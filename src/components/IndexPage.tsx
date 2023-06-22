@@ -74,12 +74,6 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
             </div>
           </div>
         </div>
-        <div className={styles.projects}>
-          <h1 className={styles.myProjectsTitle}>projects:</h1>
-          <div>
-            <ProjectList projectList={projectList} />
-          </div>
-        </div>
         <div className={styles.background}>
           <h3>Background: <a href="http://eng.iate.obninsk.ru" target="_blank">IATE MEPHI</a></h3>
           <span>
