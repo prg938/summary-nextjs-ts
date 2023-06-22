@@ -169,8 +169,8 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
           <div className={styles.skillset}>
             <h3>Skillset:</h3>
             <ul>
+              <li><b>Frontend:</b></li>
               <li>JavaScript</li>
-              <li>Node.js</li>
               <li>TypeScript</li>
               <li>React</li>
               <li>Redux</li>
@@ -182,8 +182,22 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <li>CSS3</li>
               <li>Sass preprocessor</li>
               <li>Webpack</li>
+              <li>-</li>
+              <li><b>Fullstack (Junior):</b></li>
+              <li>Node.js</li>
+              <li>TypeScript</li><li>Nest</li>
+              <li>TypeORM</li>
+              <li>Postgres</li>
+              <li>-</li>
+              <li><b>Editors:</b></li>
               <li>VS Code</li>
-              <li>Git / Github / Gitlab</li>
+              <li>-</li>
+              <li><b>VCS:</b></li>
+              <li>Git</li>
+              <li>-</li>
+              <li><b>Platforms/Services:</b></li>
+              <li>Github</li>
+              <li>Gitlab</li>
             </ul>
           </div>
         </div>
