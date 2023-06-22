@@ -23,43 +23,43 @@
     "previewSize": [109, 109],
     "repoName": "masonrylayout",
     "repoLink": "https://github.com/prg938/masonrylayout-tsx-react",
-    "desc": "masonrylayout-tsx-react <b>exports MasonryLayout component</b> from index.tsx. It allows to create grid layout based on columns with auto-placement and optimized usage of Y-space by reducing unnecessary gaps<br/>Live Demo: <a href='/masonry'>HERE</a>",
+    "desc": "<b>exports MasonryLayout component</b> from index.tsx. It allows to create grid layout based on columns with auto-placement and optimized usage of Y-space by reducing unnecessary gaps<br/>Live Demo: <a href='/masonry'>HERE</a>",
     "shortDesc": "React-component to create grid layout based on columns with auto-placement and optimized usage of Y-space"
   },
   {
-    "id": "html-webpack-scripts-plugin",
+    "id": "wsp",
     "preview": "/hwsp.png",
     "previewSize": [269, 141],
-    "repoName": "webpack-scripts-plugin",
-    "repoLink": "https://github.com/prg938/html-webpack-scripts-plugin",
-    "desc": "<b>Plugin for <a href='https://webpack.js.org' target='_blank'>WEBPACK</a></b>. Main feature is to make external-script as inline-script. Used by at least <a href='https://github.com/prg938/html-webpack-scripts-plugin/network/dependents' target='_blank'><b>16 PEOPLE</b></a> according to dependency graph",
+    "repoName": "wsp",
+    "repoLink": "https://github.com/prg938/wsp",
+    "desc": "<b>Plugin for <a href='https://webpack.js.org' target='_blank'>WEBPACK</a></b>. Main feature is to make external-script as inline-script. Already used by <a href='https://github.com/prg938/html-webpack-scripts-plugin/network/dependents' target='_blank'><b>~16 repos</b></a> according to dependency graph",
     "shortDesc": "Plugin for Webpack for making inline-scripts"
   },
   {
-    "id": "summary-nextjs-ts",
+    "id": "next-summary",
     "preview": "/summary-nextjs-ts.jpg",
     "previewSize": [387, 146],
     "repoName": "next summary",
-    "repoLink": "https://github.com/prg938/summary-nextjs-ts",
+    "repoLink": "https://github.com/prg938/next-summary",
     "desc": "Summary site <a href='https://prg938.vercel.app/' target='_blank'>prg938.vercel.app</a> build with Next.js React Framework. Deployed to Vercel.<br/><br/><b>Features:</b><br/><b>SEO-optimized SSG</b> - Static Site Generation with prefetched and cached data <br/><b>CSR</b> - Client Side Rendering with <b>SWR</b> for client-side fetching & caching <br/><b>next/image</b> for image optimization <br/><b>next/font/google</b> for fonts optimization <br/><b>next/link</b> for client-side routing<br/>Flexible layout system<br/>Auto-routing using file-structure",
     "shortDesc": "Summary site with Next React Framework"
   },
   {
-    "id": "wavread",
+    "id": "rwav",
     "preview": "/wavread.png",
     "previewSize": [269, 274],
-    "repoName": "wavread",
-    "repoLink": "https://github.com/prg938/wavread",
-    "desc": "<b>A tiny tool written on Node.js</b> for reading wav-file. Analyses specific bytes and returns object with data",
-    "shortDesc": "Node-lib for reading .wav"
+    "repoName": "rwav",
+    "repoLink": "https://github.com/prg938/rwav",
+    "desc": "<b>Node.js lib</b> for reading binary data of .wav-file. Analyses specific bytes and returns object with data",
+    "shortDesc": "Node.js lib for reading binary data of .wav-file"
   },
   {
-    "id": "create-react-ext",
+    "id": "cre",
     "preview": "https://user-images.githubusercontent.com/7237762/228644970-0afe67f8-413d-4ddf-a00c-7f8b52e5be04.gif",
     "previewSize": [753, 294],
     "repoName": "CRE",
-    "repoLink": "https://github.com/prg938/create-react-ext",
+    "repoLink": "https://github.com/prg938/cre",
     "desc": "<b>Node.js tool</b> to bootstrap new Chrome extension using React",
-    "shortDesc": "Node-tool to bootstrap new Chrome extension using React"
+    "shortDesc": "Node.js tool to bootstrap new Chrome extension using React"
   }
 ]
