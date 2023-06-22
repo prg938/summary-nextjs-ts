@@ -49,7 +49,6 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
         <h3 className={styles.title}>
           <Link href={projectHref}>{repoName}</Link>
         </h3>
-        <p className={styles.desc}>{shortDesc}</p>
         <Image
           src={preview}
           alt={'preview'}
@@ -59,6 +58,7 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
           blurDataURL={blurDataURL}
           style={imageStyle}
         />
+        <p className={styles.desc}>{shortDesc}</p>
       </div>
     }
     return (
