@@ -1,9 +1,13 @@
 
 .project {
   width: 300px;
+  padding: 10px;
+  background-color: #e4e4e4;
   border-radius: 7px;
   border: 1px solid transparent;
-
+  h3 a {
+    color: #3b294d;
+  }
   .title {
     font-size: 14px;
     text-transform: uppercase;

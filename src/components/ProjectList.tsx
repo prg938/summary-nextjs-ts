@@ -21,17 +21,15 @@ enum ProjectID {
 const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex-start'}) => {
   const blurDataURL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIAAUABQMBIgACEQEDEQH/xAAUAAEAAAAAAAAAAAAAAAAAAAAI/9oACAEBAAAAAD//AP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIQAAAAf//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMQAAAAf//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z'
   const animate = '.1s ease'
-  const gap = 15
+  const gap = 20
   const pathProject = '/project/'
-  const w100 = {width: '100%', height: 'auto'}
-  const w80 = {width: '80%', height: 'auto'}
+  const imageStyle = {marginTop: '5px', borderRadius: '7px', width: '10%', height: 'auto'}
   const fs20px = {fontSize: '20px'}
   const ttu = {textTransform: 'uppercase'} as const
   
   const list = projectList.map(project => {
     const {id, repoName, shortDesc, previewSize, preview} = project
     const projectHref = pathProject + id
-    let imageStyle = {marginTop: '5px', borderRadius: '7px'}
     if (id as string === ProjectID.MarioGame) {
       return <div key={id} className={styles.project}>
         <div style={fs20px}>
@@ -47,9 +45,6 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
       </div>
     }
     if (id as string === ProjectID.ChromeWeather || id as string === ProjectID.MasonrylayoutTsxReact) {
-      if (id as string === ProjectID.ChromeWeather) {
-        imageStyle = {...imageStyle, ...w80}
-      }
       return <div key={id} className={styles.project}>
         <h3 className={styles.title}>
           <Link href={projectHref}>{repoName}</Link>
