@@ -21,7 +21,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div>
+        <div className={styles.photoMeGroup}>
           <Image 
             quality={100}
             src={greetingImg}
@@ -30,9 +30,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
             // @height auto-provided
             // @blurDataURL auto-provided
             placeholder="blur"
-            />
-        </div>
-        <div className={styles.photoMeGroup}>
+          />
           <div className={styles.photo}>
             <Image 
               src={photoImg}
