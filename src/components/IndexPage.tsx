@@ -25,6 +25,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
           <Image 
             src={greetingImg}
             alt="hi"
+            quality={100}
             // @width auto-provided
             // @height auto-provided
             // @blurDataURL auto-provided
