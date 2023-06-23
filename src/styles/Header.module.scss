@@ -1,3 +1,4 @@
+$max-width: 700px;
 .header {
   --link-color: black;
   --item-hover-color: black;
@@ -35,6 +36,10 @@
       a {
         color: var(--item-current-color);
         font-weight: 700;
+        font-size: 27px;
+        @media screen and (max-width: $max-width) {
+          font-size: 14px;
+        }
       }
     }
     a {
