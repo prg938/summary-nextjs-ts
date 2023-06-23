@@ -1,5 +1,5 @@
 $media-point-1: 700px;
-$media-point-2: 500px;
+$media-point-2: 515px;
 $media-point-3: 400px;
 .header {
   --link-color: black;
@@ -22,7 +22,7 @@ $media-point-3: 400px;
     list-style: none;
   }
   ul li {
-    transition: all .1s ease;
+    transition: background-color .1s ease;
     margin-right: 20px;
     padding: 13px;
     border-radius: 7px;
@@ -50,7 +50,6 @@ $media-point-3: 400px;
       }
       a {
         color: var(--item-current-color);
-        font-weight: 700;
       }
     }
     a {
