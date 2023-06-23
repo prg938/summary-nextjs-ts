@@ -1,8 +1,10 @@
 
 import styles from '@/styles/Header.module.scss'
 import Link from 'next/link'
+import Image from 'next/image'
 import {useRouter, withRouter} from 'next/router'
 import {useEffect, useState} from 'react'
+import photoImg from '@/../public/photo.png'
 
 export default () => {
   const emojiList = ['👾','😎','🙂','🦨','🍏','😈','😇','🥶','👽','😸','🤖','🐷','🐼','🦄','🐸','🦎','🦔','🐜','🐞','🕷️','🦾','🥷','💪','🎃','💎','🧱','🛖','📱','🍟','🍖','🧁','🍪','🍸','🥤','🥥','🍆','🍄','🍁','🌚','🌈','♾️','☢️','◼️','🔶']
@@ -19,6 +21,16 @@ export default () => {
   return (
     <header className={styles.header}>
       <ul>
+        <li>
+          <Image
+            width={50}
+            height={50}
+            src={photoImg}
+            alt="photo"
+            placeholder="blur"
+            style={{borderRadius: '50%'}}
+          />
+        </li>
         <li>{emoji}</li>
         <li className={resolveClassName('/')}>
           <Link href="/">ME</Link>

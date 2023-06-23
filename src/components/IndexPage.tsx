@@ -6,7 +6,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type {ProjectItem} from '@/types'
 import greetingImg from '@/../public/greeting.jpeg'
-import photoImg from '@/../public/photo.png'
 
 const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList}) => {
 
@@ -16,7 +15,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
     <>
       <Head>
         <title>⬛PRG938</title>
-        <meta name="description" content=" #PRG938 #Pakov #Ivan #frontend #backend #next #nest #react #node.js #ts" />
+        <meta name="description" content="#PRG938 #Pakov #Ivan #frontend #backend #next #nest #react #node.js #ts" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -31,13 +30,6 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
             // @blurDataURL auto-provided
             placeholder="blur"
           />
-          <div className={styles.photo}>
-            <Image 
-              src={photoImg}
-              alt="photo"
-              placeholder="blur"
-              style={{borderRadius: '50%'}} />
-          </div>
           <div className={styles.me}>
             <span>
               <b>Hello everyone!</b>

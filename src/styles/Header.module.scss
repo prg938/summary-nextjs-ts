@@ -60,6 +60,9 @@
     padding-right:0;
   }
   ul li:first-child:hover {
-    transform: rotate(45deg);
+    //transform: rotate(45deg);
+  }
+  ul li:nth-child(2) {
+    font-size: 20px;
   }
 }
