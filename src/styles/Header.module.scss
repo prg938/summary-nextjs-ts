@@ -24,6 +24,10 @@ $max-width: 700px;
     margin-right: 20px;
     padding: 13px;
     border-radius: 7px;
+    font-size: 27px;
+    @media screen and (max-width: $max-width) {
+      font-size: 14px;
+    }
     &.current {
       background-color: darkgray;
       a:after {
@@ -36,10 +40,6 @@ $max-width: 700px;
       a {
         color: var(--item-current-color);
         font-weight: 700;
-        font-size: 27px;
-        @media screen and (max-width: $max-width) {
-          font-size: 14px;
-        }
       }
     }
     a {
