@@ -20,6 +20,9 @@ $media-point-3: 415px;
     display: flex;
     align-items: center;
     list-style: none;
+    @media screen and (max-width: $media-point-1) {
+      justify-content: center;
+    }
   }
   ul li {
     transition: background-color .1s ease;
@@ -36,7 +39,6 @@ $media-point-3: 415px;
     &:nth-child(1) {
       display: flex;
     }
-    &:nth-child(1),
     &:nth-child(2) {
       @media screen and (max-width: $media-point-3) {
         display: none;
