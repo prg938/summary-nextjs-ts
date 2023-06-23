@@ -150,7 +150,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
               <li>
                 <div>
                   <span>
-                    ⬛ Currently looking for job as a <b>Junior Backend developer</b> / <b>Junior Fullstack developer</b> / <b>JavaScript Frontend Developer</b> / <b>React Frontend Developer</b>
+                    ⬛ Currently looking for job as a <b>Junior Backend/Fullstack developer</b> / <b>JavaScript Frontend Developer</b> / <b>React Frontend Developer</b>
                   </span>
                 </div>
                 <div>
