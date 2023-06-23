@@ -1,4 +1,6 @@
-$max-width: 700px;
+$media-point-1: 700px;
+$media-point-2: 500px;
+$media-point-3: 400px;
 .header {
   --link-color: black;
   --item-hover-color: black;
@@ -25,8 +27,17 @@ $max-width: 700px;
     padding: 13px;
     border-radius: 7px;
     font-size: 27px;
-    @media screen and (max-width: $max-width) {
+    @media screen and (max-width: $media-point-1) {
       font-size: 14px;
+    }
+    @media screen and (max-width: $media-point-2) {
+      margin-right: 0;
+    }
+    &:nth-child(1),
+    &:nth-child(2) {
+      @media screen and (max-width: $media-point-3) {
+        display: none;
+      }
     }
     &.current {
       background-color: darkgray;
