@@ -9,6 +9,7 @@ $media-point-3: 415px;
   position: sticky;
   top: 0;
   padding: 1rem;
+  min-width: 320px;
   background-color: var(--header-background);
   backdrop-filter: saturate(180%) blur(5px);
   color: var(--link-color);
