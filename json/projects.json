@@ -37,8 +37,8 @@
   },
   {
     "id": "next-summary",
-    "preview": "/summary-nextjs-ts.jpg",
-    "previewSize": [387, 146],
+    "preview": "/next.png",
+    "previewSize": [499, 101],
     "repoName": "next summary",
     "repoLink": "https://github.com/prg938/next-summary",
     "desc": "Summary site <a href='https://prg938.vercel.app/' target='_blank'>prg938.vercel.app</a> build with Next.js React Framework. Deployed to Vercel.<br/><br/><b>Features:</b><br/><b>SEO-optimized SSG</b> - Static Site Generation with prefetched and cached data <br/><b>CSR</b> - Client Side Rendering with <b>SWR</b> for client-side fetching & caching <br/><b>next/image</b> for image optimization <br/><b>next/font/google</b> for fonts optimization <br/><b>next/link</b> for client-side routing<br/>Flexible layout system<br/>Auto-routing using file-structure",

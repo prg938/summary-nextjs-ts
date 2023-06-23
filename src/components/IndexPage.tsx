@@ -5,9 +5,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import type {ProjectItem} from '@/types'
-import greetingImg from '@/../public/greeting.png'
+import greetingImg from '@/../public/greeting.jpeg'
 import photoImg from '@/../public/photo.png'
-import ProjectList from './ProjectList'
 
 const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList}) => {
 
@@ -17,7 +16,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
     <>
       <Head>
         <title>⬛PRG938</title>
-        <meta name="description" content=" PRG938 Pakov Ivan (frontend web-developer / software-developer). Next / Next / React developer" />
+        <meta name="description" content=" #PRG938 #Pakov #Ivan #frontend #backend #next #nest #react #node.js #ts" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,12 +24,11 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
         <div>
           <Image 
             src={greetingImg}
-            alt="greeting"
+            alt="hi"
             // @width auto-provided
             // @height auto-provided
             // @blurDataURL auto-provided
             placeholder="blur"
-            style={{width: '100%', height: 'auto'}}
             />
         </div>
         <div className={styles.photoMeGroup}>
