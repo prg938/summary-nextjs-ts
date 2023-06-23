@@ -70,13 +70,10 @@ $media-point-3: 400px;
   }
   ul li:first-child {
     cursor: pointer;
-    transform: rotate(0deg);
-    transition: .1s ease;
     padding-left: 0;
     padding-right:0;
   }
   ul li:first-child:hover {
-    //transform: rotate(45deg);
   }
   ul li:nth-child(2) {
     font-size: 20px;
