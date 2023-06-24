@@ -163,7 +163,7 @@ export default () => {
       <meta name="description" content="Gists of PRG938 fetched from GitHub" />
     </Head>
     <GistUnwrapper ref={GistUnwrapperRef} />
-    <h2 className={styles.title}>Gists fetched using GitHub API</h2>
+    <h2 className={styles.title}>Gists</h2>
     <h5><ExternalLink data={[GithubDocsURL, GithubDocsURL]} /></h5>
     <br/>
     <ul className={styles.gists}>{gists}</ul>
