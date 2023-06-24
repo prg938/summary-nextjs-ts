@@ -3,7 +3,7 @@
     "id": "mariogame",
     "preview": "https://user-images.githubusercontent.com/7237762/223578682-67f165f4-6d51-423a-9740-96fb184dfe63.mp4",
     "previewSize": [451, 326],
-    "repoName": "mariogame",
+    "repoName": "Mario game",
     "repoLink": "https://github.com/prg938/mariogame",
     "desc": "<b>Mario game using HTML5 Canvas</b>. Still under development. But first 2 levels available! Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE</a>",
     "shortDesc": "Mario game using Canvas. 2 levels ready to be played! Other levels still under development"
@@ -12,7 +12,7 @@
     "id": "chrome-weather",
     "preview": "https://user-images.githubusercontent.com/7237762/229301735-0ba10058-6239-4417-b8c0-8aa001aa7388.gif",
     "previewSize": [456, 412],
-    "repoName": "chrome-weather",
+    "repoName": "chrome weather",
     "repoLink": "https://github.com/prg938/chrome-weather",
     "desc": "<b>Weather extension for Chrome</b>. Written on TypeScript and React. <br/><b>Features:</b><br/>Languages support: Ru/En<br/>Animated chart<br/>Geolocation<br/>50 hours of detailed weather information: temperature, humidity, precipitation, wind",
     "shortDesc": "Weather extension for Google Chrome with TypeScript and React"
@@ -21,7 +21,7 @@
     "id": "masonrylayout-tsx-react",
     "preview": "https://user-images.githubusercontent.com/7237762/244848390-2b435ea0-63e1-456b-affe-9c6ba3f169e9.png",
     "previewSize": [109, 109],
-    "repoName": "masonrylayout",
+    "repoName": "masonry layout",
     "repoLink": "https://github.com/prg938/masonrylayout-tsx-react",
     "desc": "<b>exports MasonryLayout component</b> from index.tsx. It allows to create grid layout based on columns with auto-placement and optimized usage of Y-space by reducing unnecessary gaps<br/>Live Demo: <a href='/masonry'>HERE</a>",
     "shortDesc": "React-component to create grid layout based on columns with auto-placement and optimized usage of Y-space"
