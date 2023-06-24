@@ -28,8 +28,8 @@
   },
   {
     "id": "wsp",
-    "preview": "/hwsp.png",
-    "previewSize": [269, 141],
+    "preview": "/wsp.jpeg",
+    "previewSize": [661, 409],
     "repoName": "wsp",
     "repoLink": "https://github.com/prg938/wsp",
     "desc": "<b>Plugin for <a href='https://webpack.js.org' target='_blank'>WEBPACK</a></b>. Main feature is to make external-script as inline-script. Already used by <a href='https://github.com/prg938/html-webpack-scripts-plugin/network/dependents' target='_blank'><b>~16 repos</b></a> according to dependency graph",
@@ -46,8 +46,8 @@
   },
   {
     "id": "rwav",
-    "preview": "/wavread.png",
-    "previewSize": [269, 274],
+    "preview": "/rwav.jpeg",
+    "previewSize": [700, 481],
     "repoName": "rwav",
     "repoLink": "https://github.com/prg938/rwav",
     "desc": "<b>Node.js lib</b> for reading binary data of .wav-file. Analyses specific bytes and returns object with data",
@@ -55,8 +55,8 @@
   },
   {
     "id": "cre",
-    "preview": "https://user-images.githubusercontent.com/7237762/228644970-0afe67f8-413d-4ddf-a00c-7f8b52e5be04.gif",
-    "previewSize": [753, 294],
+    "preview": "/cre.jpeg",
+    "previewSize": [700, 553],
     "repoName": "CRE",
     "repoLink": "https://github.com/prg938/cre",
     "desc": "<b>Node.js tool</b> to bootstrap new Chrome extension using React",
