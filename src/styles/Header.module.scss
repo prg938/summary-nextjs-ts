@@ -40,7 +40,7 @@ $media-point-3: 415px;
     &:nth-child(1) {
       display: flex;
     }
-    &:nth-child(2) {
+    &:nth-child(1) {
       @media screen and (max-width: $media-point-3) {
         display: none;
       }
