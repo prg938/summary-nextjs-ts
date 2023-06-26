@@ -159,7 +159,7 @@ export default () => {
   
   return <>
     <Head>
-      <title>⬛PRG938/GISTS</title>
+      <title>PRG938/GISTS</title>
       <meta name="description" content="Gists of PRG938 fetched from GitHub" />
     </Head>
     <GistUnwrapper ref={GistUnwrapperRef} />

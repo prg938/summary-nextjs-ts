@@ -5,6 +5,10 @@ export interface ProjectItem {
   previewSize: [number, number] | undefined
   repoName: string
   repoLink: string
-  desc: string
   shortDesc: string
+  mappedComponent: string
+}
+
+export interface ProjectListType {
+  projects: ProjectItem[]
 }

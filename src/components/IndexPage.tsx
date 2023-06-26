@@ -1,20 +1,19 @@
 
 import styles from '@/styles/Index.module.scss'
+import greetingImage from '@/../public/greeting.jpeg'
 import {FunctionComponent, useEffect} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import type {ProjectItem} from '@/types'
-import greetingImg from '@/../public/greeting.jpeg'
 
-const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList}) => {
+const IndexPage: FunctionComponent = () => {
 
   useEffect(() => { console.log('debug: on client once') }, [])
   
   return (
     <>
       <Head>
-        <title>⬛PRG938</title>
+        <title>PRG938</title>
         <meta name="description" content="#PRG938 #Pakov #Ivan #frontend #backend #next #nest #react #node.js #ts" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -23,7 +22,7 @@ const IndexPage: FunctionComponent<{projectList: ProjectItem[]}> = ({projectList
         <div className={styles.photoMeGroup}>
           <Image 
             quality={100}
-            src={greetingImg}
+            src={greetingImage}
             alt="hi"
             // @width auto-provided
             // @height auto-provided

@@ -1,25 +1,26 @@
-
+import styles from '@/styles/ProjectList.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '@/styles/ProjectList.module.scss'
 import {FC} from 'react'
-import type {ProjectItem} from '@/types'
 import dynamic from 'next/dynamic'
+import type {ProjectItem} from '@/types'
+
 const MasonryLayout = dynamic(import('masonrylayout-tsx-react'), {ssr: false})
 
-const justifyContaierProp = MasonryLayout.defaultProps?.justifyContainer
-type justifyContaierPropType = typeof justifyContaierProp
-interface ProjectListType {
-  projectList: ProjectItem[]
-  justifyContainer?: justifyContaierPropType
-}
 enum ProjectID {
   MarioGame = 'mariogame',
   ChromeWeather = 'chrome-weather',
   MasonrylayoutTsxReact = 'masonrylayout-tsx-react'
 }
-const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex-start'}) => {
-  const blurDataURL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIAAUABQMBIgACEQEDEQH/xAAUAAEAAAAAAAAAAAAAAAAAAAAI/9oACAEBAAAAAD//AP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIQAAAAf//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMQAAAAf//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z'
+
+const justifyContaierProp = MasonryLayout.defaultProps?.justifyContainer
+type justifyContaierPropType = typeof justifyContaierProp
+interface ProjectListType {
+  list: ProjectItem[]
+  justifyContainer?: justifyContaierPropType
+}
+
+const ProjectList: FC<ProjectListType> = ({list, justifyContainer = 'center'}) => {
   const animate = '.1s ease'
   const gap = 20
   const pathProject = '/project/'
@@ -27,49 +28,51 @@ const ProjectList: FC<ProjectListType> = ({projectList, justifyContainer = 'flex
   const fs20px = {fontSize: '20px'}
   const ttu = {textTransform: 'uppercase'} as const
   
-  const list = projectList.map(project => {
+  const projects = list.map(project => {
     const {id, repoName, shortDesc, previewSize, preview} = project
     const projectHref = pathProject + id
-    if (id as string === ProjectID.MarioGame) {
-      return <div key={id} className={styles.project}>
-        <div style={fs20px}>
-          <div style={ttu}>
+    switch(id as ProjectID) {
+      case ProjectID.MarioGame:
+        return <div key={id} className={styles.project}>
+          <div style={fs20px}>
+            <div style={ttu}>
+              <Link href={projectHref}>{repoName}</Link>
+            </div>
+          </div>
+          <div>
+            <div className={styles.desc}>
+              {shortDesc}
+              <h3>Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE🎮</a></h3>
+            </div>
+          </div>
+        </div>
+      case ProjectID.ChromeWeather:
+      case ProjectID.MasonrylayoutTsxReact:
+        return <div key={id} className={styles.project}>
+          <h3 className={styles.title}>
             <Link href={projectHref}>{repoName}</Link>
-          </div>
+          </h3>
+          <Image
+            src={preview}
+            alt={'preview'}
+            width={previewSize![0]}
+            height={previewSize![1]}
+            placeholder='blur'
+            blurDataURL={'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIAAUABQMBIgACEQEDEQH/xAAUAAEAAAAAAAAAAAAAAAAAAAAI/9oACAEBAAAAAD//AP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIQAAAAf//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMQAAAAf//EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Af//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Af//Z'}
+            style={imageStyle}
+          />
+          <p className={styles.desc}>{shortDesc}</p>
         </div>
-        <div>
-          <div className={styles.desc}>{shortDesc}
-            <h3>Play <a href='https://prg938.github.io/mariogame' target='_blank'>HERE🎮</a></h3>
-          </div>
+      default:
+        return <div key={id} className={styles.project}>
+          <h3 className={styles.title}>
+            <Link href={projectHref}>{repoName}</Link>
+          </h3>
+          <div className={styles.desc}>{shortDesc}</div>
         </div>
-      </div>
     }
-    if (id as string === ProjectID.ChromeWeather || id as string === ProjectID.MasonrylayoutTsxReact) {
-      return <div key={id} className={styles.project}>
-        <h3 className={styles.title}>
-          <Link href={projectHref}>{repoName}</Link>
-        </h3>
-        <Image
-          src={preview}
-          alt={'preview'}
-          width={previewSize![0]}
-          height={previewSize![1]}
-          placeholder='blur'
-          blurDataURL={blurDataURL}
-          style={imageStyle}
-        />
-        <p className={styles.desc}>{shortDesc}</p>
-      </div>
-    }
-    return (
-      <div key={id} className={styles.project}>
-        <h3 className={styles.title}>
-          <Link href={projectHref}>{repoName}</Link>
-        </h3>
-        <div className={styles.desc}>{shortDesc}</div>
-      </div>
-    )
   })
-  return <MasonryLayout animate={animate} gap={gap} justifyContainer={justifyContainer}>{list}</MasonryLayout>
+
+  return <MasonryLayout animate={animate} gap={gap} justifyContainer={justifyContainer}>{projects}</MasonryLayout>
 }
 export default ProjectList
