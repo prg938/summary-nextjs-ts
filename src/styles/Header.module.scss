@@ -9,7 +9,7 @@ $media-point-3: 550px;
   backdrop-filter: saturate(180%) blur(5px);
   text-transform: uppercase;
   font-weight: 500;
-  box-shadow: var(--header-bottom-line);
+  /*box-shadow: var(--header-bottom-line)*/;
   @media screen and (max-width: $media-point-3) {
     position: relative;
   }
