@@ -1,38 +1,39 @@
-$media-point-1: 700px;
-$media-point-2: 515px;
-$media-point-3: 415px;
+$media-point-2: 750px;
+$media-point-3: 550px;
 .header {
-  --link-color: black;
-  --item-hover-color: black;
-  --item-current-color: black;
   z-index: 2;
   position: sticky;
   top: 0;
-  padding: 0rem;
+  padding: 0rem 1rem;
   min-width: 320px;
-  background-color: var(--header-background);
   backdrop-filter: saturate(180%) blur(5px);
-  color: var(--link-color);
   text-transform: uppercase;
   font-weight: 500;
+  box-shadow: var(--header-bottom-line);
+  @media screen and (max-width: $media-point-3) {
+    position: relative;
+  }
   ul {
     max-width: 700px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     list-style: none;
-    @media screen and (max-width: $media-point-1) {
-      justify-content: center;
+    @media screen and (max-width: $media-point-3) {
+      flex-direction: column;
     }
   }
   ul li {
-    transition: background-color .1s ease;
     margin-right: 20px;
     padding: 13px;
     border-radius: 7px;
-    font-size: 27px;
-    @media screen and (max-width: $media-point-1) {
-      font-size: 14px;
+    font-size: 12px;
+    a {
+      color: var(--header-link-color);
+      font-weight: 600;
+      &:hover {
+        color: var(--header-link-hover-color);
+      }
     }
     @media screen and (max-width: $media-point-2) {
       margin-right: 0;
@@ -40,46 +41,28 @@ $media-point-3: 415px;
     &:nth-child(1) {
       display: flex;
     }
-    &:nth-child(1) {
-      @media screen and (max-width: $media-point-3) {
-        display: none;
-      }
-    }
     &.current {
-      background-color: darkgray;
+      background-color: var(--header-active-background);
       a:after {
-        display: block;
+        display: none;
         position: relative;
         content: "";
         border-bottom: 2px solid grey;
         top: 5px;
       }
       a {
-        color: var(--item-current-color);
+        color: var(--header-active-color);
       }
     }
-    a {
-      color: rgb(31, 31, 31);
-      font-weight: 600;
-      position: relative;
-      svg.linkArrow {
-        position: absolute;
-        top: 1px;
-        right: -10px;
-        fill: var(--link-color);
-        display: none;
-      }
-      &:hover {
-        color: var(--item-hover-color);
-      }
+    &:last-child label > span:last-child {
+      font-size: 10px;
+      font-family: inherit;
     }
   }
   ul li:first-child {
     cursor: pointer;
     padding-left: 0;
     padding-right:0;
-  }
-  ul li:first-child:hover {
   }
   ul li:nth-child(2) {
     font-size: 20px;

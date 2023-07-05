@@ -8,7 +8,13 @@ export interface ProjectItem {
   shortDesc: string
   mappedComponent: string
 }
+export interface ProjectListType {projects: ProjectItem[]}
 
-export interface ProjectListType {
-  projects: ProjectItem[]
+export interface BlogItemType {
+  id: string
+  date: string
+  title: string
+  tags: Array<string>
+  mappedComponent: string
 }
+export type BlogItemsType = {items: BlogItemType[]}

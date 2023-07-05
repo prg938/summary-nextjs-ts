@@ -1,12 +1,56 @@
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background: white;
   --body-font-size: 14px;
-  --header-background: rgba(255, 255, 255, .5);
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+}
+:root[data-color-scheme="light"] {
+  --body-color: rgba(0, 0, 0, .87);
+  --a-color: rebeccapurple;
+  --header-link-color: rgba(51, 51, 51);
+  --header-link-hover-color: rgba(51, 51, 51);
+  --header-active-background: #ececec;
+  --header-active-color: black;
+  --header-bottom-line: unset;
+  --project-item-border: 3px solid #ebebeb;
+  --project-item-first-background: rgb(250, 250, 250);
+  --project-item-background: transparent;
+  --gist-item-background: #e4e4e4;
+  --gistname-item-color: rgb(14, 14, 14);
+  --muidocs-palette-primary-500: #f1f1f1;
+  --muidocs-palette-primary-700: #dbdbdb;
+  --blog-date-color: rgba(0, 0, 0, 0.7);
+  --blog-title-color: rgba(0, 0, 0, 1);
+  --blog-author-color: rgba(0, 0, 0, 0.7);
+  --blog-tag-color: rgba(0, 0, 0, 0.5);
+  --blog-hover-border: rgb(199, 199, 199);
+  color-scheme: light;
+}
+:root[data-color-scheme="dark"] {
+  --body-color: rgba(255, 255, 255, .87);
+  --a-color: rgb(151, 89, 213);
+  --header-link-color: rgba(255, 255, 255, .87);
+  --header-link-hover-color: white;
+  --header-active-background: #0e0e0e;
+  --header-active-color: #979797;
+  --header-bottom-line: inset 0 -1px 0 0 rgba(144,144,144, .15);
+  --project-item-border: 3px solid transparent;
+  --project-item-first-background: rgb(14, 14, 14);
+  --project-item-background: rgb(14, 14, 14);
+  --gist-item-background: black;
+  --gistname-item-color: #575757;
+  --muidocs-palette-primary-500: #000000;
+  --muidocs-palette-primary-700: black;
+  --blog-date-color: rgba(255, 255, 255, 0.7);
+  --blog-title-color: rgba(255, 255, 255, 0.7);
+  --blog-author-color: rgba(255, 255, 255, 0.7);
+  --blog-tag-color: rgba(255, 255, 255, 0.5);
+  --blog-hover-border: black;
+  color-scheme: dark;
+}
+span.react-syntax-highlighter-line-number {
+  min-width: 1.25em !important;
 }
 * {
   padding: 0;
@@ -15,14 +59,11 @@
 a {
   text-decoration: none;
   font-weight: bold;
-  color: rebeccapurple;
+  color: var(--a-color);
 }
-html,
+html, body {max-width: 100vw}
+
 body {
-  max-width: 100vw;
-}
-body {
-  color: rgb(var(--foreground-rgb));
-  background: var(--background);
   font-size: var(--body-font-size);
+  color: var(--body-color);
 }

@@ -6,10 +6,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const IndexPage: FunctionComponent = () => {
-
+const IndexPage: FunctionComponent = (props) => {
   useEffect(() => { console.log('debug: on client once') }, [])
-  
   return (
     <>
       <Head>
@@ -28,6 +26,7 @@ const IndexPage: FunctionComponent = () => {
             // @height auto-provided
             // @blurDataURL auto-provided
             placeholder="blur"
+            style={{borderRadius: '7px'}}
           />
           <div className={styles.me}>
             <span>

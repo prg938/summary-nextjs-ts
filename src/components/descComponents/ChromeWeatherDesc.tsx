@@ -1,7 +1,6 @@
 import styles from '@/styles/ProjectItem.module.scss'
-import Image from 'next/image'
 import React from 'react'
-import {Paragraph} from './DescComponents'
+import {Paragraph} from '../Typography'
 
 export default () => {
   return <div className={styles.desc}>

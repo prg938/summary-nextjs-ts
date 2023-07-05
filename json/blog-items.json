@@ -1,0 +1,23 @@
+[
+  {
+    "id": "about",
+    "date": "30 Июня / 2023",
+    "title": "Блог. Мысли. Заметки",
+    "tags": ["#новости"],
+    "mappedComponent": "AboutBlogDesc"
+  },
+  {
+    "id": "mui",
+    "date": "Март 25 / 2023",
+    "title": "React библиотека MUI. Зачем?",
+    "tags": ["#react"],
+    "mappedComponent": "MuiWhyDesc"
+  },
+  {
+    "id": "million-react",
+    "date": "30 Июня / 2023",
+    "title": "Как million/React оптимизирует FPS",
+    "tags": ["#react"],
+    "mappedComponent": "MillionDesc"
+  }
+]

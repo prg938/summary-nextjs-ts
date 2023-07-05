@@ -5,7 +5,7 @@ export default () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.poweredBy}>
-        <h4>prg938 2023</h4>
+        <h4>PRG938 Dev</h4>
       </div>
     </footer>
   )

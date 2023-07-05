@@ -1,11 +1,7 @@
-$max-width: 700px;
+$max-width: 750px;
 .main {
   >div:not(:first-child) {
     margin: 50px 0;
-  }
-
-  .myProjectsTitle {
-    font-size: 30px;
   }
   
   h1, h3 {
@@ -15,15 +11,6 @@ $max-width: 700px;
   li {
     list-style: none;
   }
-  
-  .photo {
-    margin-left: 0;
-    img {
-      @media screen and (max-width: $max-width) {
-        margin-left: 0;
-      }
-    }
-  }
 
   .me {
     border-left: 2px solid grey;
@@ -31,6 +18,17 @@ $max-width: 700px;
     @media screen and (max-width: $max-width) {
       padding-left: 0;
       border-left: 0px solid transparent;
+    }
+  }
+  
+  .contacts {
+    margin-top: 15px;
+    @media screen and (max-width: $max-width) {
+      margin-top: 50px;
+    }
+    b {
+      text-transform: uppercase;
+      font-size: 12px;
     }
   }
   
@@ -52,10 +50,6 @@ $max-width: 700px;
     align-items: center;
     font-weight: 500;
     background-color: transparent;
-    color: black;
-    a {
-      color: black;
-    }
   }
 
   .workExperience {
@@ -68,22 +62,8 @@ $max-width: 700px;
       padding-right: 20px;
     }
     >ul>li:first-child {
-      padding-bottom: 19px;
+      padding-bottom: 20px;
       padding-top: 20px;
-    }
-  }
-
-  .contacts {
-    margin-top: 15px;
-    @media screen and (max-width: $max-width) {
-      margin-top: 50px;
-    }
-    a {
-      text-decoration: none;
-    }
-    b {
-      text-transform: uppercase;
-      font-size: 12px;
     }
   }
 }

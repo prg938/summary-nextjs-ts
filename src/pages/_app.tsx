@@ -3,6 +3,7 @@ import type {ReactElement, ReactNode} from 'react'
 import type {NextPage} from 'next'
 import type {AppProps} from 'next/app'
 import {Inter} from 'next/font/google'
+import {Provider} from '@/GlobalRedux/provider'
 
 const inter = Inter({
   weight: ['400', '500', '600', '700'],
@@ -24,7 +25,9 @@ export default function App({Component, pageProps}: AppPropsWithLayout) {
   
   return (
     <div className={inter.className}>
-      {layout}
+      <Provider>
+        {layout}
+      </Provider>
     </div>
   )
 }

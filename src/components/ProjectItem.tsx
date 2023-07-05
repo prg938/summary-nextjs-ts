@@ -1,10 +1,10 @@
+import React from 'react'
 import styles from '@/styles/ProjectItem.module.scss'
 import {ProjectItem} from '@/types'
 import {FunctionComponent} from "react"
 import Image from 'next/image'
-import React from 'react'
 import stringToJSX from 'html-react-parser'
-import descComponents from './DescComponents'
+import descComponents from './descComponents'
 import DefaultPreviewSVG from './DefaultPreviewSVG'
 
 const getImage = (W: number, H: number, preview: string) => {

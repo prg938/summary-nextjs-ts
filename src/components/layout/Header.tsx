@@ -3,10 +3,12 @@ import styles from '@/styles/Header.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import {useRouter, withRouter} from 'next/router'
-import {useEffect, useState} from 'react'
+import {FC, useEffect, useState} from 'react'
 import photoImg from '@/../public/photo.png'
+import dynamic from 'next/dynamic'
+const MuiSwitcher = dynamic(import('../MuiSwitcher'), {ssr: false})
 
-export default () => {
+const Header: FC<{}> = () => {
   const emojiList = ['👾','😎','🙂','🦨','🥷','😈','😇','🥷','👽','😸','🤖','🐷','🐼','🥷','🐸','🥷','🦔','🥷','🐞','🥷','🦾','🥷','💪','🎃','🥷','🧱','🛖','📱','🍟','🍖','🧁','🍪','🍸','🥤','🥥','🍆','🍄','🍁','🌚','🥷','🥷','☢️','🥷','🥷']
   const randomize = (min:number, max:number) => Math.round(min - 0.5 + Math.random() * (max - min + 1))
   const randomizeEmoji = () => emojiList[randomize(0, emojiList.length - 1)]
@@ -18,36 +20,37 @@ export default () => {
     console.log('debug: header emoji set')
     setEmoji(randomizeEmoji())
   }, [])
+  enum HeaderLiType {Content, Link}
+  const headerLi = [
+    {type: HeaderLiType.Content, content: <Image width={50} height={50} src={photoImg} alt="photo" placeholder="blur" style={{borderRadius: '50%'}} />},
+    {type: HeaderLiType.Content, content: emoji},
+    {type: HeaderLiType.Link, href: '/', text: 'ME'},
+    {type: HeaderLiType.Link, href: '/project/all', text: 'PROJECTS'},
+    {type: HeaderLiType.Link, href: '/gists', text: 'GISTS'},
+    {type: HeaderLiType.Link, href: '/blog/all', text: 'BLOG'},
+    {type: HeaderLiType.Content, content: <MuiSwitcher />}
+  ]
+  const headerLiElements = headerLi.map((value, i) => {
+    if (value.type === HeaderLiType.Content) {
+      return <li key={i}>{value.content}</li>
+    }
+    if (value.type === HeaderLiType.Link) {
+      const {href, text} = value
+      let className = href
+      if (href === '/project/all') className = '/project/[slug]'
+      if (href === '/blog/all') className = '/blog/[slug]'
+      return <li key={i} className={resolveClassName(className as string)}>
+        <Link href={href as string}>{text}</Link>
+      </li>
+    }
+  })
   return (
     <header className={styles.header}>
       <ul>
-        <li>
-          <Image
-            width={50}
-            height={50}
-            src={photoImg}
-            alt="photo"
-            placeholder="blur"
-            style={{borderRadius: '50%'}}
-          />
-        </li>
-        <li>{emoji}</li>
-        <li className={resolveClassName('/')}>
-          <Link href="/">ME</Link>
-        </li>
-        <li className={resolveClassName('/project/[slug]')}>
-          <Link href="/project/all">Projects</Link>
-        </li>
-        <li className={resolveClassName('/gists')}>
-          <Link href="/gists">Gists</Link>
-        </li>
-        <li>
-          <a href="https://github.com/prg938" target="_blank">
-            <span>Github</span>
-            <svg aria-hidden="true" className={styles.linkArrow} height="7" viewBox="0 0 6 6" width="7"><path d="M1.25215 5.54731L0.622742 4.9179L3.78169 1.75597H1.3834L1.38936 0.890915H5.27615V4.78069H4.40513L4.41109 2.38538L1.25215 5.54731Z"></path></svg>
-          </a>
-        </li>
+        {headerLiElements}
       </ul>
     </header>
   )
 }
+
+export default Header

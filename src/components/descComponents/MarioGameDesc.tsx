@@ -1,5 +1,4 @@
 import styles from '@/styles/ProjectItem.module.scss'
-import Image from 'next/image'
 import React from 'react'
 
 export default () => {

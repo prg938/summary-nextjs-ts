@@ -5,7 +5,7 @@
     "previewSize": [451, 326],
     "repoName": "Mario game",
     "repoLink": "https://github.com/prg938/mariogame",
-    "shortDesc": "Mario game using Canvas. 2 levels ready to be played! Other levels still under development",
+    "shortDesc": "Mario game using Canvas. 2 levels ready to be played! Other levels still under development😎",
     "mappedComponent": "MarioGameDesc"
   },
   {
@@ -14,7 +14,7 @@
     "previewSize": [456, 412],
     "repoName": "chrome weather",
     "repoLink": "https://github.com/prg938/chrome-weather",
-    "shortDesc": "Weather extension for Google Chrome with TypeScript and React",
+    "shortDesc": "Weather extension for Chrome written on TypeScript / React / CRE",
     "mappedComponent": "ChromeWeatherDesc"
   },
   {
@@ -23,16 +23,16 @@
     "previewSize": [109, 109],
     "repoName": "masonry layout",
     "repoLink": "https://github.com/prg938/masonrylayout-tsx-react",
-    "shortDesc": "React-component to create grid layout based on columns with auto-placement and optimized usage of Y-space",
+    "shortDesc": "Masonry layout implementation",
     "mappedComponent": "MasonryLayoutDesc"
   },
   {
     "id": "next-summary",
-    "preview": "/next.png",
-    "previewSize": [301, 61],
+    "preview": "default",
+    "previewSize": [32, 32],
     "repoName": "next summary",
     "repoLink": "https://github.com/prg938/next-summary",
-    "shortDesc": "Summary site with Next React Framework",
+    "shortDesc": "This site with Next",
     "mappedComponent": "NextSummaryDesc"
   },
   {
@@ -41,7 +41,7 @@
     "previewSize": [32, 32],
     "repoName": "wsp",
     "repoLink": "https://github.com/prg938/wsp",
-    "shortDesc": "Plugin for Webpack to transform external-scripts to inline-scripts",
+    "shortDesc": "external-scripts ⇒ inline-scripts (webpack plugin)",
     "mappedComponent": "WspDesc"
   },
   {
@@ -50,7 +50,7 @@
     "previewSize": [32, 32],
     "repoName": "rwav",
     "repoLink": "https://github.com/prg938/rwav",
-    "shortDesc": "Libraby for reading binary data of wav-file. Written using node.js",
+    "shortDesc": "Read wav using node.js",
     "mappedComponent": "RWavDesc"
   },
   {
@@ -59,7 +59,7 @@
     "previewSize": [32, 32],
     "repoName": "CRE",
     "repoLink": "https://github.com/prg938/cre",
-    "shortDesc": "Generate new Google Chrome extension and use TypeScript and React. Written using node.js",
+    "shortDesc": "Bootstrap new Google Chrome extension fast. Write code using TypeScript / React",
     "mappedComponent": "CreDesc"
   }
 ]
