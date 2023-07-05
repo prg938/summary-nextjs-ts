@@ -31,13 +31,15 @@ const IndexPage: FunctionComponent = (props) => {
           <div className={styles.me}>
             <span>
               <b>Hello everyone!</b>
-              <span> 🖐️🙂 Im Pakov Ivan. Live in Russia. Experienced in Frontend/</span>
-              <Link href="https://react.dev/" target="_blank">React</Link>/<Link href="https://nextjs.org/" target="_blank">Next</Link>
-              <span> web-development. Also Backend <Link href="https://nodejs.org/" target="_blank">node.js</Link>/<Link href="https://www.typescriptlang.org/" target="_blank">ts</Link>/<Link href="https://nestjs.com/" target="_blank">Nest</Link> Developer. </span>
-              <span>I like to create things, learn new stuff, work within interesting projects</span>
+              <span> 🖐️🙂 Im: </span>
+              <Link href="https://react.dev/" target="_blank">React</Link>/
+              <Link href="https://nextjs.org/" target="_blank">Next</Link>/
+              <Link href="https://nodejs.org/" target="_blank">node.js</Link>/
+              <Link href="https://www.typescriptlang.org/" target="_blank">ts</Link>/
+              <Link href="https://nestjs.com/" target="_blank">Nest</Link> Developer.
+              <span>I like to create, learn, work within interesting projects.</span>
             </span>
             <div className={styles.contacts}>
-              <h3>_:</h3>
               <ul>
                 <li>
                   <span>Telegram: </span>
