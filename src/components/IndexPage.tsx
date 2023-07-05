@@ -63,9 +63,6 @@ const IndexPage: FunctionComponent = (props) => {
         </div>
         <div className={styles.background}>
           <h3>Background: <a href="http://eng.iate.obninsk.ru" target="_blank">IATE MEPHI</a></h3>
-          <span>
-            student until 2014.
-          </span>
         </div>
         <div className={styles.skillsetWorkExperienceGroup}>
 
