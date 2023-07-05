@@ -70,26 +70,27 @@ const IndexPage: FunctionComponent = (props) => {
         <div className={styles.skillsetWorkExperienceGroup}>
 
           <div className={styles.workExperience}>
-            <h3>Work Experience:</h3>
+            <h1>Experience:</h1>
             <ul>
               <li>
                 <div>
-                  <span>⬛ React Frontend-developer at </span>
-                  <a href="https://vk.com/tovarovoz" target='_blank'>Freelance@TOVAROVOZ</a>
-                </div> 
-                <div>
-                  <b>Duration: </b>
-                  <span>~1.3 years(until Jun 11/2016)</span>
+                  <h1>React Frontend-developer</h1>
                 </div>
                 <div>
-                  <b>Repo: </b>
-                  <span>
-                    <a href="https://gitlab.com/sergeda/inetshop_pg/-/project_members" target='_blank'>gitlab.com/sergeda/inetshop_pg/-/project_members</a>
-                  </span>
+                  <b>Company: </b>
+                  <a href="https://vk.com/tovarovoz" target='_blank'>Freelance@TOVAROVOZ</a>
+                </div>
+                <div>
+                  <b>Duration: </b>
+                  <span>2015 — Jun 11/2016 (approx 1.4 years)</span>
                 </div>
                 <div>
                   <span>
                     <b>Team: </b>
+                  </span>
+                  <span>
+                    <a href="https://github.com/sergeda" target="_blank">Serhii Dashko</a>
+                    <span>&nbsp;&nbsp;</span>
                   </span>
                   <span>
                     <a href="https://github.com/prg938" target="_blank">ME</a>
@@ -99,31 +100,37 @@ const IndexPage: FunctionComponent = (props) => {
                     <a href="https://gitlab.com/bhingoleramdas143" target="_blank">Ramdas Bhingole</a>
                     <span>&nbsp;&nbsp;</span>
                   </span>
+                </div>
+                <div>
+                  <b>Link: </b>
                   <span>
-                    <a href="https://github.com/sergeda" target="_blank">Serhii Dashko</a>
+                    <a href="https://gitlab.com/sergeda/inetshop_pg/-/project_members" target='_blank'>gitlab.com/sergeda/inetshop_pg/-/project_members</a>
                   </span>
                 </div>
                 <div>
                   <b>Responsibilities: </b>
                   <ul>
-                    <li>◾Creating logic for admin-panel of TOVAROVOZ using React</li>
-                    <li>◾Creating custom UIs</li>
-                    <li>◾Implementing CRUD for entities by interacting with backend REST API</li>
-                    <li>◾Implementing client-routing for entities (cats/news/goods/etc)</li>
-                    <li>◾Implementing i18n (internationalization) for 3 languages</li>
-                    <li>◾Integrating 3rd-party components like WYSIWYG-editor and file-uploader</li>
-                    <li>◾Bugfixing within project</li>
+                    <li>Creating logic for admin-panel of TOVAROVOZ using React</li>
+                    <li>Creating custom UIs</li>
+                    <li>Implementing CRUD for entities by interacting with backend REST API</li>
+                    <li>Implementing client-routing for entities (cats/news/goods/etc)</li>
+                    <li>Implementing i18n (internationalization) for 3 languages</li>
+                    <li>Integrating 3rd-party components like WYSIWYG-editor and file-uploader</li>
+                    <li>Bugfixing within project</li>
                   </ul>
                 </div>
               </li>
               <li>
                 <div>
-                  <span>⬛ PTO-engineer assistant at </span>
-                  <a href="/" target='_blank'>Unknown</a>
+                  <h1>PTO-engineer assistant</h1>
+                </div>
+                <div>
+                  <b>Company: </b>
+                  <a href="https://vk.com/tovarovoz" target='_blank'>undefined</a>
                 </div>
                 <div>
                   <b>Duration: </b>
-                  <span>from 2016 - until now</span>
+                  <span>from 2016 — 2023</span>
                 </div>
                 <div>
                   <span>
@@ -141,19 +148,28 @@ const IndexPage: FunctionComponent = (props) => {
                 <div>
                   <b>Responsibilities: </b>
                   <ul>
-                    <li>◾Assisting in preparing documentation using Adobe Acrobat & Microsoft Word</li>
+                    <li>Assisting in preparing documentation using Adobe Acrobat & Microsoft Word</li>
                   </ul>
                 </div>
               </li>
               <li>
                 <div>
-                  <span>
-                    ⬛ Currently looking for job as a <b>Junior Backend/Fullstack developer</b> / <b>JavaScript Frontend Developer</b> / <b>React Frontend Developer</b>
-                  </span>
-                </div>
-                <div>
-                  <b>Duration: </b>
-                  <span>from 2023 - until now</span>
+                  <h1>Currently looking for job</h1>
+                  <div>
+                    <b>Duration: </b>
+                    <span>now</span>
+                  </div>
+                  <div>
+                    <b>Positions: </b>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>Junior Backend or Fullstack developer</li>
+                      <li>JavaScript Developer</li>
+                      <li>React Frontend Developer</li>
+                      <li>Frontend Developer</li>
+                    </ul>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -175,9 +191,11 @@ const IndexPage: FunctionComponent = (props) => {
               <li>Sass preprocessor</li>
               <li>Webpack</li>
               <li>-</li>
-              <li><b>Fullstack (Junior):</b></li>
+              <li><b>Backend (Junior):</b></li>
               <li>Node.js</li>
-              <li>TypeScript</li><li>Nest</li>
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>Nest</li>
               <li>TypeORM</li>
               <li>Postgres</li>
               <li>-</li>
@@ -187,7 +205,7 @@ const IndexPage: FunctionComponent = (props) => {
               <li><b>VCS:</b></li>
               <li>Git</li>
               <li>-</li>
-              <li><b>Platforms/Services:</b></li>
+              <li><b>Services:</b></li>
               <li>Github</li>
               <li>Gitlab</li>
             </ul>

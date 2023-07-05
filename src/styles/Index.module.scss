@@ -45,6 +45,10 @@ $max-width: 750px;
     }
   }
 
+  .skillsetWorkExperienceGroup {
+    justify-content: space-between;
+  }
+
   .photoMeGroup {
     gap: 35px;
     align-items: center;
@@ -60,10 +64,6 @@ $max-width: 750px;
     >ul>li {
       margin-top: 20px;
       padding-right: 20px;
-    }
-    >ul>li:first-child {
-      padding-bottom: 20px;
-      padding-top: 20px;
     }
   }
 }
