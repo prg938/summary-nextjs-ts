@@ -24,7 +24,7 @@ const Header: FC<{}> = () => {
   const headerLi = [
     {type: HeaderLiType.Content, content: <Image width={50} height={50} src={photoImg} alt="photo" placeholder="blur" style={{borderRadius: '50%'}} />},
     {type: HeaderLiType.Content, content: emoji},
-    {type: HeaderLiType.Link, href: '/', text: 'ME'},
+    {type: HeaderLiType.Link, href: '/', text: 'WHOAMI'},
     {type: HeaderLiType.Link, href: '/project/all', text: 'PROJECTS'},
     {type: HeaderLiType.Link, href: '/gists', text: 'GISTS'},
     {type: HeaderLiType.Link, href: '/blog/all', text: 'BLOG'},
