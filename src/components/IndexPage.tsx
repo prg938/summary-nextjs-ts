@@ -103,7 +103,7 @@ const IndexPage: FunctionComponent = (props) => {
                 <div>
                   <b>Link: </b>
                   <span>
-                    <a href="https://gitlab.com/sergeda/inetshop_pg/-/project_members" target='_blank'>gitlab.com/sergeda/inetshop_pg/-/project_members</a>
+                    <a href="https://gitlab.com/sergeda/inetshop_pg/-/project_members" target='_blank'>gitlab</a>
                   </span>
                 </div>
                 <div>
