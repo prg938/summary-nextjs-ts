@@ -156,7 +156,10 @@ const IndexPage: FunctionComponent = (props) => {
                   <h1>Currently looking for job</h1>
                   <div>
                     <b>Duration: </b>
-                    <span>now</span>
+                    <span>from current year</span>
+                  </div>
+                  <div>
+                    <b>Salary I want: &gt;105К rubles (&gt;1.1K dollars) / month</b>
                   </div>
                   <div>
                     <b>Positions: </b>
