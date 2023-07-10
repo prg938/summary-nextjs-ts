@@ -2,7 +2,7 @@ $media-point-2: 750px;
 $media-point-3: 550px;
 .header {
   z-index: 2;
-  position: sticky;
+  position: relative;
   top: 0;
   padding: 0rem 1rem;
   min-width: 320px;

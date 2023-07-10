@@ -5,8 +5,9 @@ import React, {FC} from 'react'
 import {useRouter} from 'next/router'
 import Head from 'next/head'
 import * as Desc from '../descComponents/blog'
+import Input from '../Input'
 
-const tags = ['#react', '#typescript', '#next', '#новости', '#stackoverflow']
+const allTags = ['#react', '#typescript', '#next', '#новости', '#stackoverflow']
 
 function selectTags(
   event: React.MouseEvent<HTMLSpanElement>,
@@ -31,22 +32,6 @@ function selectTags(
   })
 }
 
-function filterItems(items: BlogItemType[], selectedTags: string[]): JSX.Element[] {
-  let filteredItems: JSX.Element[] = []
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i]
-    const {tags, id} = item
-    for (let t = 0; t < tags.length; t++) {
-      const tag = tags[t]
-      if (selectedTags.includes(tag)) {
-        filteredItems[filteredItems.length] = <Item key={id} {...item} />
-        break
-      }
-    }
-  }
-  return filteredItems
-}
-
 function findItem(items: BlogItemType[], slug: string) {
   for (const item of items) {
     const {id} = item
@@ -58,7 +43,7 @@ function findItem(items: BlogItemType[], slug: string) {
 }
 
 function getTagElements(selectedTags: Array<string>, clickEventHandler: any): JSX.Element[] {
-  return tags.map(tag => {
+  return allTags.map(tag => {
     let selectedClass = String()
     if (selectedTags.includes(tag)) {
       selectedClass = styles.selected
@@ -67,10 +52,27 @@ function getTagElements(selectedTags: Array<string>, clickEventHandler: any): JS
   })
 }
 
+function filterItems(items: BlogItemType[], selectedTags: string[], searchText: string): JSX.Element[] {
+  let filteredItems: JSX.Element[] = []
+  for (let i = 0; i < items.length; i++) {
+    const item = items[i]
+    const {tags, id, title} = item
+    for (let t = 0; t < tags.length; t++) {
+      const tag = tags[t]
+      if (selectedTags.includes(tag) && title.toLowerCase().includes(searchText.toLowerCase().trim())) {
+        filteredItems[filteredItems.length] = <Item key={id} {...item} />
+        break
+      }
+    }
+  }
+  return filteredItems
+}
+
 const BlogPage: FC<BlogItemsType> = props => {
   const router = useRouter()
   const goBack = () => router.back()
   const [selectedTags, setSelectedTags] = React.useState<Array<string>>([])
+  const [searchText, setSearchText] = React.useState<string>(String())
 
   const clickEventHandler = (event: React.MouseEvent<HTMLSpanElement>) => {
     selectTags(event, setSelectedTags)
@@ -79,20 +81,16 @@ const BlogPage: FC<BlogItemsType> = props => {
   if (router.query.slug === 'all') {
     const tags = getTagElements(selectedTags, clickEventHandler)
     let items: JSX.Element[] = []
-    let noPosts = false
     let itemsLength = 0
     
-    if (selectedTags.length === 0) {
-      items = props.items.map((item) => <Item key={item.id} {...item} />)
-    }
-    else {
-      items = filterItems(props.items, selectedTags)
-    }
+    items = filterItems(props.items, selectedTags.length === 0 ? allTags : selectedTags, searchText)
+
     if (items.length === 0) {
       items = [<div key='noposts'>Посты не найдены 😔</div>]
-      noPosts = true
     }
-    if (noPosts === false) itemsLength = items.length
+    else {
+      itemsLength = items.length
+    }
 
     return <>
       <Head>
@@ -103,6 +101,7 @@ const BlogPage: FC<BlogItemsType> = props => {
         <div>Найти по тегам: {tags}</div>
         <div>Постов: {itemsLength}</div>
       </div>
+      <Input debounce={setSearchText} />
       <div className={styles.items}>
         {items}
       </div>

@@ -32,11 +32,11 @@ const IndexPage: FunctionComponent = (props) => {
             <span>
               <b>Hello everyone!</b>
               <span> 🖐️🙂 Im: </span>
-              <Link href="https://react.dev/" target="_blank">React</Link>/
-              <Link href="https://nextjs.org/" target="_blank">Next</Link>/
-              <Link href="https://nodejs.org/" target="_blank">node.js</Link>/
-              <Link href="https://www.typescriptlang.org/" target="_blank">ts</Link>/
-              <Link href="https://nestjs.com/" target="_blank">Nest</Link> Developer.
+              <Link href="https://react.dev/" target="_blank">React</Link>{' / '}
+              <Link href="https://nextjs.org/" target="_blank">Next</Link>{' / '} 
+              <Link href="https://nodejs.org/" target="_blank">node.js</Link>{' / '} 
+              <Link href="https://www.typescriptlang.org/" target="_blank">ts</Link>{' / '} 
+              <Link href="https://nestjs.com/" target="_blank">Nest</Link> Developer.{' '} 
               <span>I like to create, learn, work within interesting projects.</span>
             </span>
             <div className={styles.contacts}>
@@ -63,21 +63,18 @@ const IndexPage: FunctionComponent = (props) => {
             </div>
           </div>
         </div>
-        <div className={styles.background}>
-          <h3>Background: <a href="http://eng.iate.obninsk.ru" target="_blank">IATE MEPHI</a></h3>
-        </div>
         <div className={styles.skillsetWorkExperienceGroup}>
 
           <div className={styles.workExperience}>
-            <h1>Experience:</h1>
+            <h1>Commercial development experience:</h1>
             <ul>
               <li>
                 <div>
-                  <h1>React Frontend-developer</h1>
+                  <h2>React Frontend-developer</h2>
                 </div>
                 <div>
                   <b>Company: </b>
-                  <a href="https://vk.com/tovarovoz" target='_blank'>Freelance@TOVAROVOZ</a>
+                  <a href="https://vk.com/tovarovoz" target='_blank'>Freelance/TOVAROVOZ</a>
                 </div>
                 <div>
                   <b>Duration: </b>
@@ -109,7 +106,7 @@ const IndexPage: FunctionComponent = (props) => {
                 <div>
                   <b>Responsibilities: </b>
                   <ul>
-                    <li>Creating logic for admin-panel of TOVAROVOZ using React</li>
+                    <li>Creating/Updating business-logic using React for admin-panel</li>
                     <li>Creating custom UIs</li>
                     <li>Implementing CRUD for entities by interacting with backend REST API</li>
                     <li>Implementing client-routing for entities (cats/news/goods/etc)</li>
@@ -121,15 +118,69 @@ const IndexPage: FunctionComponent = (props) => {
               </li>
               <li>
                 <div>
-                  <h1>PTO-engineer assistant</h1>
+                  <h2>UI React Developer</h2>
                 </div>
                 <div>
                   <b>Company: </b>
-                  <a href="https://vk.com/tovarovoz" target='_blank'>undefined</a>
+                  <a href="http://altinet.ua" target='_blank'>Freelance/ALTINET</a>
                 </div>
                 <div>
                   <b>Duration: </b>
-                  <span>from 2016 — 2023</span>
+                  <span>2016 — Aug 21/2018</span>
+                </div>
+                <div>
+                  <span>
+                    <b>Team: </b>
+                  </span>
+                  <span>
+                    <a href="https://github.com/sergeda" target="_blank">Serhii Dashko</a>
+                    <span>&nbsp;&nbsp;</span>
+                  </span>
+                  <span>
+                    <a href="https://github.com/prg938" target="_blank">ME</a>
+                    <span>&nbsp;&nbsp;</span>
+                  </span>
+                </div>
+                <div>
+                  <b>Responsibilities: </b>
+                  <ul>
+                    <li>Creating new business-logic using React</li>
+                    <li>Updating existing business-logic using React</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>UI React Developer</h2>
+                </div>
+                <div>
+                  <b>Company: </b>
+                  <a href="http://www.autoklad.ua" target='_blank'>Freelance/AUTOCLAD</a>
+                </div>
+                <div>
+                  <b>Duration: </b>
+                  <span>2019 — Oct 4/2020</span>
+                </div>
+                <div>
+                  <span>
+                    <b>Team: -</b>
+                  </span>
+                </div>
+                <div>
+                  <b>Responsibilities: </b>
+                  <ul>
+                    <li>Creating/Updating business-logic using React for admin-panel</li>
+                    <li>Database interaction using REST API</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>PTO-engineer assistant</h2>
+                </div>
+                <div>
+                  <b>Duration: </b>
+                  <span>from 2020 — 2023</span>
                 </div>
                 <div>
                   <span>
@@ -153,23 +204,19 @@ const IndexPage: FunctionComponent = (props) => {
               </li>
               <li>
                 <div>
-                  <h1>Currently looking for job</h1>
+                  <h2>Open for new opportunities</h2>
                   <div>
-                    <b>Duration: </b>
-                    <span>from current year</span>
-                  </div>
-                  <div>
-                    <b>Salary I want: &gt;105К rubles (&gt;1.1K dollars) / month</b>
+                    <b>Desired salary: &gt;1.1K dollars / month</b>
                   </div>
                   <div>
                     <b>Positions: </b>
                   </div>
                   <div>
                     <ul>
-                      <li>Junior Backend or Fullstack developer</li>
-                      <li>JavaScript Developer</li>
-                      <li>React Frontend Developer</li>
-                      <li>Frontend Developer</li>
+                      <li>(Middle/Middle+) Frontend developer</li>
+                      <li>(Middle/Middle+) React developer</li>
+                      <li>(Middle/Middle+) JavaScript developer</li>
+                      <li>(Junior) Fullstack developer</li>
                     </ul>
                   </div>
                 </div>
@@ -177,7 +224,7 @@ const IndexPage: FunctionComponent = (props) => {
             </ul>
           </div>
           <div className={styles.skillset}>
-            <h3>Skillset:</h3>
+            <h3>Expertise:</h3>
             <ul>
               <li><b>Frontend:</b></li>
               <li>JavaScript</li>
@@ -212,6 +259,12 @@ const IndexPage: FunctionComponent = (props) => {
               <li>Gitlab</li>
             </ul>
           </div>
+        </div>
+        <div className={styles.background}>
+          <h3>Background: <a href="http://eng.iate.obninsk.ru" target="_blank">IATE MEPHI</a></h3>
+          <ul>
+            <li><b>Faculty:</b> Institute of Intelligent Cybernetic Systems</li>
+          </ul>
         </div>
       </main>
     </>

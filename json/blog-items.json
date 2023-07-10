@@ -1,23 +1,16 @@
 [
   {
     "id": "about",
-    "date": "30 Июня / 2023",
-    "title": "Блог. Мысли. Заметки",
+    "date": "2023-07-10T20:02:45.435Z",
+    "title": "Блог",
     "tags": ["#новости"],
     "mappedComponent": "AboutBlogDesc"
   },
   {
-    "id": "mui",
-    "date": "Март 25 / 2023",
-    "title": "React библиотека MUI. Зачем?",
-    "tags": ["#react"],
-    "mappedComponent": "MuiWhyDesc"
-  },
-  {
-    "id": "million-react",
-    "date": "30 Июня / 2023",
-    "title": "Как million/React оптимизирует FPS",
-    "tags": ["#react"],
-    "mappedComponent": "MillionDesc"
+    "id": "disqus-react-and-color-scheme",
+    "date": "2023-07-10T20:05:45.435Z",
+    "title": "Не работает color-scheme в disqus-react 🤔",
+    "tags": ["#react", "#stackoverflow"],
+    "mappedComponent": "DisqusReactWithColorScheme"
   }
 ]

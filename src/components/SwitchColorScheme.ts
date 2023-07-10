@@ -15,6 +15,8 @@ const switchScheme = (
     root.dataset.colorScheme = scheme
     localStorage.setItem('colorScheme', scheme)
     dispatch(action(scheme))
+    // @ts-ignore
+    if (typeof DISQUS !== "undefined") DISQUS.reset({reload: true})
 }
 
 export const switchColorScheme = (dispatch: D, action: A) => {

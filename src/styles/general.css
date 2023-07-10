@@ -7,6 +7,7 @@
 }
 :root[data-color-scheme="light"] {
   --body-color: rgba(0, 0, 0, .87);
+  --body-background-color: white;
   --a-color: rebeccapurple;
   --header-link-color: rgba(51, 51, 51);
   --header-link-hover-color: rgba(51, 51, 51);
@@ -25,10 +26,13 @@
   --blog-author-color: rgba(0, 0, 0, 0.7);
   --blog-tag-color: rgba(0, 0, 0, 0.5);
   --blog-hover-border: rgb(199, 199, 199);
+  --search-input-border: 2px solid #a5a5a5;
+  --marker-background: #d5d5d5;
   color-scheme: light;
 }
 :root[data-color-scheme="dark"] {
   --body-color: rgba(255, 255, 255, .87);
+  --body-background-color: #121212;
   --a-color: rgb(151, 89, 213);
   --header-link-color: rgba(255, 255, 255, .87);
   --header-link-hover-color: white;
@@ -47,6 +51,8 @@
   --blog-author-color: rgba(255, 255, 255, 0.7);
   --blog-tag-color: rgba(255, 255, 255, 0.5);
   --blog-hover-border: black;
+  --search-input-border: 2px solid #0c0c0c;
+  --marker-background: black;
   color-scheme: dark;
 }
 span.react-syntax-highlighter-line-number {
@@ -58,7 +64,7 @@ span.react-syntax-highlighter-line-number {
 }
 a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   color: var(--a-color);
 }
 html, body {max-width: 100vw}
@@ -66,4 +72,9 @@ html, body {max-width: 100vw}
 body {
   font-size: var(--body-font-size);
   color: var(--body-color);
+  background-color: var(--body-background-color);
+}
+
+:root[data-color-scheme="dark"] iframe[src*="disqus.com"] {
+  color-scheme: light;
 }

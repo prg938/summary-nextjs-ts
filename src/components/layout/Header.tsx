@@ -27,7 +27,7 @@ const Header: FC<{}> = () => {
     {type: HeaderLiType.Link, href: '/', text: 'WHOAMI'},
     {type: HeaderLiType.Link, href: '/project/all', text: 'PROJECTS'},
     {type: HeaderLiType.Link, href: '/gists', text: 'GISTS'},
-    {type: HeaderLiType.Link, href: '/blog/all', text: 'BLOG'},
+    {type: HeaderLiType.Link, href: '/blog/all', text: 'mini-BLOG'},
     {type: HeaderLiType.Content, content: <MuiSwitcher />}
   ]
   const headerLiElements = headerLi.map((value, i) => {

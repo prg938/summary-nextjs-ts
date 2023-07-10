@@ -1,0 +1,21 @@
+.searchWrapper {
+  height: 50px;
+  position: relative;
+}
+
+.searchInput {
+  position: absolute;
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: var(--search-input-border);
+  outline: none;
+  color: grey;
+  font-size: 14px;
+}
+
+.searchSVG {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  transform: scale(0.60);
+}

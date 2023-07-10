@@ -23,7 +23,7 @@ const Highlight: FC<HighlightPropsType> = props => {
     }
   }
   return <div style={{margin: '15px 0'}}>
-    <SyntaxHighlighter language={language} showLineNumbers={showLineNumbers} style={definedStyle} customStyle={{...{fontSize: '12px'}, ...definedCustomStyle}} {...otherProps}>
+    <SyntaxHighlighter language={language} showLineNumbers={showLineNumbers} style={definedStyle} customStyle={{...{fontSize: '14px'}, ...definedCustomStyle}} {...otherProps}>
       {children}
     </SyntaxHighlighter>
   </div>
@@ -31,4 +31,10 @@ const Highlight: FC<HighlightPropsType> = props => {
 
 const Paragraph = ({children}: {children: React.ReactNode}) => <p style={{margin: '15px 0'}}>{children}</p>
 
-export {Highlight, Paragraph}
+const Marker = ({children}: {children: React.ReactNode}) => <span style={{backgroundColor: 'var(--marker-background)', borderRadius: '5px', padding: '2px 8px'}}>{children}</span>
+
+export {
+  Highlight,
+  Paragraph,
+  Marker
+}

@@ -1,7 +1,5 @@
 import styles from './Blog.module.scss'
 import {FC} from 'react'
-import Image from 'next/image'
-import photoImg from '@/../public/photo.png'
 import {BlogItemType} from '@/types'
 import Link from 'next/link'
 
@@ -13,10 +11,7 @@ const Item: FC<ItemType> = ({id, date, title, tags, opened = false}) => {
   const tagList = tags.map(tag => <span key={tag}>{tag}&nbsp; </span>)
   const itemHref = '/blog/' + id
   const authorElement = <div className={styles.author}>
-    <div className={styles.photo}>
-      <Image width={50} height={50} src={photoImg} alt="photo" placeholder="blur" style={{borderRadius: '50%'}} />
-    </div>
-    <div className={styles.by}>author Pakov Ivan</div>
+    <div className={styles.by}>author <a href="https:/github.com/prg938" target="_blank">PRG938</a></div>
   </div>
   const itemElement = <div className={opened ? String() : styles.item}>
     <div className={styles.date}>
@@ -30,7 +25,7 @@ const Item: FC<ItemType> = ({id, date, title, tags, opened = false}) => {
       <small>{tagList}</small>
     </div>
     <div className={opened ? styles.titleBig : styles.title}>{title}</div>
-    {opened ? null : authorElement}
+    {opened ? authorElement : null}
   </div>
 
   return opened ? itemElement : <Link href={itemHref}>

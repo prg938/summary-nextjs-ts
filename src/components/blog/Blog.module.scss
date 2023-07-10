@@ -9,16 +9,12 @@
 .item {
   padding: 15px;
   border-radius: 10px;
-  background: linear-gradient(to right bottom, var(--muidocs-palette-primary-500), var(--muidocs-palette-primary-700) 120%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
   cursor: pointer;
-  border: 1px solid transparent;
-  &:hover {
-    border: 1px solid var(--blog-hover-border);
-  }
+  border: 1px solid var(--muidocs-palette-primary-700);
 }
 
 .tag {
@@ -67,15 +63,6 @@
 }
 
 .author {
- display: flex;
- align-items: center;
- font-size: 12px;
- color: var(--blog-author-color);
- .photo {
-  transform: scale(.6);
-  transform-origin: left;
- }
- .by {
-  margin-left: -13px;
- }
+  font-size: 12px;
+  color: var(--blog-author-color);
 }
