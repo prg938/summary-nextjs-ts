@@ -19,6 +19,11 @@ $max-width: 750px;
       padding-left: 0;
       border-left: 0px solid transparent;
     }
+    .hi {
+      @media screen and (max-width: $max-width) {
+        text-align: center;
+      }
+    }
   }
   
   .contacts {
