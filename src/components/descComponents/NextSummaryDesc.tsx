@@ -15,6 +15,10 @@ export default () => {
       <li>Flexible layout system</li>
       <li>Routing using file structure</li>
       <li>Mui Swticher</li>
+      <li>City Gallery</li>
+      <li>Statical mini-blog</li>
+      <li>Dark/Light color-scheme switching</li>
+      <li>Integration with Github (Gists)</li>
       <li><b>SSG</b> Fetches data. Caches. Generates static HTML-pages</li>
       <li><b>CSR</b> Client Side Rendering with <b>SWR</b> for client-side fetching and caching</li>
     </ul>
