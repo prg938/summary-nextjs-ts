@@ -1,0 +1,57 @@
+<!-- public/sitemap.xml -->
+<xml version="1.0" encoding="UTF-8">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://prg938.vercel.app</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/project/all</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/project/mariogame</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/project/chrome-weather</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/project/masonrylayout-tsx-react</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/project/next-summary</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/project/wsp</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/project/rwav</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/project/cre</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/gists</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/blog/all</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/blog/about</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>https://prg938.vercel.app/blog/disqus-react-and-color-scheme</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+</urlset>
+</xml>
