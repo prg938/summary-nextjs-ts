@@ -12,12 +12,14 @@ import city8 from '@/../public/mycity/8.jpg'
 import city9 from '@/../public/mycity/9.jpg'
 import city10 from '@/../public/mycity/10.jpg'
 
+enum ArrowType {L, R}
+
 const CityGallery: FunctionComponent = () => {
   const [currentImageIndex, setImageIndex] = React.useState<number>(0)
   const sityImages = [[city1, 'Институт гидрометеорологической информации'], [city2, 'Белкинский парк'], [city3, 'Музей истории города Обнинска'], [city4,  'Скульптура "Кот учёный"'], [city5, 'Усадьба Белкино'], [city6, 'Белкинский парк'], [city7, 'Городской парк'], [city8, ''], [city9, ''], [city10, '']]
   const currentImage = sityImages[currentImageIndex]
   let timeoutId: Parameters<typeof clearTimeout>[0] = undefined
-  enum ArrowType {L, R}
+
   const arrowClick = (type: ArrowType) => {
     let imageIndex = currentImageIndex
     if (type === ArrowType.L) {
@@ -30,6 +32,12 @@ const CityGallery: FunctionComponent = () => {
     if (imageIndex === sityImages.length) imageIndex = 0
     setImageIndex(imageIndex)
   }
+
+  const dashes = sityImages.map((image, i) => <div key={i} className={i <= currentImageIndex ? styles.dash : styles.dash + ' ' + styles.opaq}></div>)
+  
+  let title = currentImage[1] as string
+  if (title.length === 0) title = 'Без описания'
+  
   useEffect(() => {
     timeoutId = setTimeout(() => {
       if (currentImageIndex === sityImages.length - 1) setImageIndex(0)
@@ -39,13 +47,8 @@ const CityGallery: FunctionComponent = () => {
       clearTimeout(timeoutId)
     }
   })
-  const dashes = sityImages.map((image, i) => <div className={i <= currentImageIndex ? styles.dash : styles.dash + ' ' + styles.opaq}></div>)
-  let title = currentImage[1] as string
-  if (title.length === 0) {
-    title = 'Нет описания'
-  }
   return <div className={styles.gallery}>
-    <Image src={currentImage[0]} alt="obninsk" />
+    <Image src={currentImage[0]} placeholder="blur" alt="obninsk" />
     <div className={styles.imageListBarTitleGroup}>
       <div className={styles.imageListBar}>{dashes}</div>
       <div className={styles.title}>{title}</div>
