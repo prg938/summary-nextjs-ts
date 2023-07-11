@@ -278,6 +278,7 @@ const IndexPage: FunctionComponent = props => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="yandex-verification" content="a1e54786b39f217b" />
+        <meta name="google-site-verification" content="WwqOSUwmJ7QuPCHC5yGGIOBO21M4gd6RZAkR0hcStf8" />
       </Head>
       <main className={styles.main}>
         <div className={styles.photoMeGroup}>
