@@ -16,7 +16,7 @@ enum ArrowType {L, R}
 
 const CityGallery: FunctionComponent = () => {
   const [currentImageIndex, setImageIndex] = React.useState<number>(0)
-  const sityImages = [[city1, 'ВНИИГМИ-МЦД "Тайфун"'], [city2, 'Белкинский парк'], [city3, 'Музей истории города Обнинска'], [city4,  'Скульптура "Кот учёный"'], [city5, 'Усадьба Белкино'], [city6, 'Белкинский парк'], [city7, 'Городской парк'], [city8, ''], [city9, ''], [city10, '']]
+  const sityImages = [[city1, 'ВНИИГМИ-МЦД "Тайфун"'], [city2, 'Белкинский парк'], [city3, 'Музей истории города Обнинска'], [city4,  'Скульптура "Кот учёный"'], [city5, 'Усадьба Белкино'], [city7, 'Белкинский парк'], [city6, ''], [city8, 'Городской парк'], [city9, ''], [city10, '']]
   const currentImage = sityImages[currentImageIndex]
   let timeoutId: Parameters<typeof clearTimeout>[0] = undefined
 
