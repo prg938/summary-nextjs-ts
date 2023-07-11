@@ -9,7 +9,7 @@ import dynamic from 'next/dynamic'
 const MuiSwitcher = dynamic(import('../MuiSwitcher'), {ssr: false})
 
 const Header: FC<{}> = () => {
-  const emojiList = ['👾','😎','🙂','🦨','🥷','😈','😇','🥷','👽','😸','🤖','🐷','🐼','🥷','🐸','🥷','🦔','🥷','🐞','🥷','🦾','🥷','💪','🎃','🥷','🧱','🛖','📱','🍟','🍖','🧁','🍪','🍸','🥤','🥥','🍆','🍄','🍁','🌚','🥷','🥷','☢️','🥷','🥷']
+  const emojiList = ['👾','😎','🙂','🥷','😈','😇','🥷','👽','😸','🤖','🐼','🥷','🐸','🥷','🦔','🥷','🐞','🥷','🦾','🥷','💪','🎃','🥷','🍟','🍖','🧁','🍪','🥤','🥥','🍄','🍁','🌚','🥷','🥷','☢️','🥷','🥷']
   const randomize = (min:number, max:number) => Math.round(min - 0.5 + Math.random() * (max - min + 1))
   const randomizeEmoji = () => emojiList[randomize(0, emojiList.length - 1)]
   const [emoji, setEmoji] = useState('◼️')
@@ -22,7 +22,6 @@ const Header: FC<{}> = () => {
   }, [])
   enum HeaderLiType {Content, Link}
   const headerLi = [
-    {type: HeaderLiType.Content, content: <Image width={50} height={50} src={photoImg} alt="photo" placeholder="blur" style={{borderRadius: '50%'}} />},
     {type: HeaderLiType.Content, content: emoji},
     {type: HeaderLiType.Link, href: '/', text: 'WHOAMI'},
     {type: HeaderLiType.Link, href: '/project/all', text: 'PROJECTS'},

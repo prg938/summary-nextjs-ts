@@ -1,16 +1,17 @@
 
+import React, {FunctionComponent, useEffect} from 'react'
 import styles from '@/styles/Index.module.scss'
-import greetingImage from '@/../public/greeting.jpeg'
-import {FunctionComponent, useEffect} from 'react'
+import meJPG from '@/../public/me.jpg'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import CityGallery from './CityGallery'
 
 const Me: FunctionComponent = () => {
   return <div className={styles.me}>
     <div className={styles.hi}>
-      <div><b>Hello everyone!</b></div>
-      <div>Im IVAN PAKOV. And this is my resume</div>
+      <h1><b>Hello everyone!</b></h1>
+      <div>Im IVAN PAKOV. And this is my resume 🙂</div>
     </div>
     <div className={styles.contacts}>
       <ul>
@@ -237,51 +238,59 @@ const Expertise: FunctionComponent = () => {
   </div>
 }
 
-const IndexPage: FunctionComponent = (props) => {
-  useEffect(() => { console.log('debug: on client once') }, [])
+const WhoAmi: FunctionComponent = () => {
+  return <h1 style={{color: 'rebeccapurple', marginTop: '50px'}}>
+    <Link href="https://react.dev/" target="_blank">React</Link>{' / '}
+    <Link href="https://www.typescriptlang.org/" target="_blank">TypeScript</Link>{' / '} 
+    <Link href="https://nodejs.org/" target="_blank">node.js</Link>{' / '} 
+    <Link href="https://nextjs.org/" target="_blank">Next</Link>{' / '} 
+    <Link href="https://nestjs.com/" target="_blank">Nest</Link> web-developer.{' '}
+  </h1>
+}
+
+const Background: FunctionComponent = () => {
+  return <div className={styles.background}>
+    <h3>Background: <a href="http://eng.iate.obninsk.ru" target="_blank">OBNINSK INSTITUTE FOR NUCLEAR POWER ENGINEERING</a></h3>
+    <ul>
+      <li><b>Branch:</b> <a href="https://eng.mephi.ru" target="_blank">Moscow Engineering Physics Institute (NRNU MEPhI)</a></li>
+      <li><b>Faculty:</b> Intelligent Cybernetic Systems</li>
+    </ul>
+  </div>
+}
+
+const Location: FunctionComponent = () => {
+  return <div>
+    <h3>Location: </h3>
+    <ul>
+      <li>Russia/Moscow</li>
+      <li>Russia/Obninsk. <b>Current location.</b> 97км to Moscow</li>
+    </ul>
+  </div>
+}
+
+const IndexPage: FunctionComponent = props => {
+  useEffect(() => { console.log('WHOAMI') }, [])
   return (
     <>
       <Head>
         <title>PRG938</title>
-        <meta name="description" content="#PRG938 #Pakov #Ivan #frontend #backend #next #nest #react #node.js #ts" />
+        <meta name="description" content="#PRG938 #Pakov #Ivan #frontend #backend #next #nest #react #node.js #typescript" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <div className={styles.photoMeGroup}>
-          <Image 
-            quality={100}
-            src={greetingImage}
-            alt="hi"
-            placeholder="blur"
-            style={{borderRadius: '7px'}}
-          />
+          <Image src={meJPG} quality={100} alt="PRG938" placeholder="blur" style={{width: '180px', height: 'auto', borderRadius: '7px'}} />
           <Me />
         </div>
-        <h1 style={{color: 'rebeccapurple', marginTop: '50px'}}>
-          <Link href="https://react.dev/" target="_blank">React</Link>{' / '}
-          <Link href="https://www.typescriptlang.org/" target="_blank">TypeScript</Link>{' / '} 
-          <Link href="https://nodejs.org/" target="_blank">node.js</Link>{' / '} 
-          <Link href="https://nextjs.org/" target="_blank">Next</Link>{' / '} 
-          <Link href="https://nestjs.com/" target="_blank">Nest</Link> web-developer.{' '}  </h1>
+        <WhoAmi />
         <div className={styles.skillsetWorkExperienceGroup}>
           <WorkExperience />
           <Expertise />
         </div>
-        <div className={styles.background}>
-          <h3>Background: <a href="http://eng.iate.obninsk.ru" target="_blank">OBNINSK INSTITUTE FOR NUCLEAR POWER ENGINEERING</a></h3>
-          <ul>
-            <li><b>Faculty:</b> Intelligent Cybernetic Systems</li>
-            <li><b>Branch:</b> MEPhI</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Location: </h3>
-          <ul>
-            <li>Russia/Moscow</li>
-            <li>Russia/Obninsk. <b>Current location.</b> 97км to Moscow</li>
-          </ul>
-        </div>
+        <Background />
+        <Location />
+        <CityGallery />
       </main>
     </>
   )

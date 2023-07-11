@@ -6,10 +6,10 @@ $media-point-3: 550px;
   top: 0;
   padding: 0rem 1rem;
   min-width: 320px;
+  min-height: 70px;
   backdrop-filter: saturate(180%) blur(5px);
   text-transform: uppercase;
   font-weight: 500;
-  /*box-shadow: var(--header-bottom-line)*/;
   @media screen and (max-width: $media-point-3) {
     position: relative;
   }
@@ -27,7 +27,7 @@ $media-point-3: 550px;
     margin-right: 20px;
     padding: 7px;
     border-radius: 7px;
-    font-size: 12px;
+    font-size: 14px;
     a {
       color: var(--header-link-color);
       font-weight: 600;
@@ -60,11 +60,13 @@ $media-point-3: 550px;
     }
   }
   ul li:first-child {
-    cursor: pointer;
     padding-left: 0;
     padding-right:0;
   }
-  ul li:nth-child(2) {
+  ul li:nth-child(1) {
     font-size: 20px;
+  }
+  ul li:last-child {
+  min-height: 40px;
   }
 }
