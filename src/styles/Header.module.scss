@@ -1,4 +1,3 @@
-$media-point-2: 750px;
 $media-point-3: 550px;
 .header {
   z-index: 2;
@@ -35,7 +34,7 @@ $media-point-3: 550px;
         color: var(--header-link-hover-color);
       }
     }
-    @media screen and (max-width: $media-point-2) {
+    @media screen and (max-width: $media-point-3) {
       margin-right: 0;
     }
     &:nth-child(1) {
