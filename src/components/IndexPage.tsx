@@ -277,6 +277,7 @@ const IndexPage: FunctionComponent = props => {
         <meta name="description" content="#PRG938 #Pakov #Ivan #frontend #backend #next #nest #react #node.js #typescript" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="yandex-verification" content="a1e54786b39f217b" />
       </Head>
       <main className={styles.main}>
         <div className={styles.photoMeGroup}>
