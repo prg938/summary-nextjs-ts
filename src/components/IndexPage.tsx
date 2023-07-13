@@ -48,7 +48,7 @@ const WorkExperience: FunctionComponent = () => {
         </div>
         <div>
           <b>Company: </b>
-          <a href="https://vk.com/tovarovoz" target='_blank'>Remote/TOVAROVOZ</a>
+          <a href="https://vk.com/tovarovoz" target='_blank'>TOVAROVOZ(remote work)</a>
         </div>
         <div>
           <b>Duration: </b>
@@ -96,7 +96,7 @@ const WorkExperience: FunctionComponent = () => {
         </div>
         <div>
           <b>Company: </b>
-          <a href="http://altinet.ua" target='_blank'>Remote/ALTINET</a>
+          <a href="http://altinet.ua" target='_blank'>ALTINET(remote work)</a>
         </div>
         <div>
           <b>Duration: </b>
@@ -129,7 +129,7 @@ const WorkExperience: FunctionComponent = () => {
         </div>
         <div>
           <b>Company: </b>
-          <a href="http://www.autoklad.ua" target='_blank'>Remote/AUTOCLAD</a>
+          <a href="http://www.autoklad.ua" target='_blank'>AUTOCLAD(remote work)</a>
         </div>
         <div>
           <b>Duration: </b>
